@@ -20,8 +20,8 @@ export function ClosingCTA() {
               Start your project with Jabal Al-Sheikh Marble.
             </h2>
             <p className="mx-auto mt-5 max-w-xl text-balance text-base text-white/75 sm:text-lg">
-              Whether you're specifying materials for a client, renovating a
-              kitchen, or planning a full building program — we're ready when
+              Whether you&apos;re specifying materials for a client, renovating a
+              kitchen, or planning a full building program — we&apos;re ready when
               you are.
             </p>
             <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
