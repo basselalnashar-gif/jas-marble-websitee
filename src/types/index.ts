@@ -37,7 +37,11 @@ export type Application = {
   recommendedMaterialSlugs: string[];
 };
 
-export type ProjectCategory = "Residential" | "Commercial" | "Hospitality";
+export type ProjectCategory =
+  | "Residential"
+  | "Commercial"
+  | "Hospitality"
+  | "Institutional";
 
 export type Project = {
   slug: string;
