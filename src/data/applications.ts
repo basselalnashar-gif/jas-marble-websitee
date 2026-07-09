@@ -11,7 +11,10 @@ export const applications: Application[] = [
     tagline: "The centerpiece of the home",
     description:
       "The kitchen countertop sees more daily use than almost any other surface in the home — it needs to withstand heat, knives, and spills while still being the first thing guests notice. We template, fabricate, and install countertops in marble, granite, quartz, and sintered stone to match both your kitchen's style and how you actually use it.",
-    images: [],
+    images: [
+      { src: "/images/applications/kitchen-countertops/kc-01.jpg", alt: "Dark marble double-sink vanity countertop" },
+      { src: "/images/applications/kitchen-countertops/kc-02.jpg", alt: "Double vanity with dark stone countertop" },
+    ],
     options: [
       "Eased, bullnose, waterfall, and mitered edge profiles",
       "Honed, polished, or leathered finishes",
@@ -32,7 +35,9 @@ export const applications: Application[] = [
     tagline: "Seamless, elegant, built to last",
     description:
       "Stone flooring brings a scale and continuity that few other materials can match — from grand entryways to full-home installations. We work with architects and contractors to select formats, finishes, and slip ratings appropriate to each space.",
-    images: [],
+    images: [
+      { src: "/images/applications/flooring/fl-01.jpg", alt: "Large-format flooring slab being installed on site" },
+    ],
     options: [
       "Large-format slabs for minimal grout lines",
       "Honed, polished, or textured anti-slip finishes",
@@ -53,7 +58,11 @@ export const applications: Application[] = [
     tagline: "Statement surfaces, interior and exterior",
     description:
       "A stone-clad wall turns a lobby, feature wall, or facade into a signature moment. We fabricate cladding in large-format slabs or panels, book-matched where the material allows, for a continuous and dramatic effect.",
-    images: [],
+    images: [
+      { src: "/images/applications/wall-cladding/wc-01.jpg", alt: "Book-matched dark stone cladding installation" },
+      { src: "/images/applications/wall-cladding/wc-02.jpg", alt: "Marble wall cladding in a bathroom" },
+      { src: "/images/applications/wall-cladding/wc-03.jpg", alt: "Bookmatched marble slab, floor to ceiling" },
+    ],
     options: [
       "Book-matched slab pairs for symmetrical veining",
       "Interior feature walls and exterior facades",
@@ -74,7 +83,10 @@ export const applications: Application[] = [
     tagline: "Full-scale bespoke transformations",
     description:
       "For architects and designers managing a full interior — countertops, flooring, cladding, staircases, and custom furniture pieces in a single material story — we act as a single fabrication partner from concept through installation.",
-    images: [],
+    images: [
+      { src: "/images/applications/luxury-interior-projects/li-01.jpg", alt: "Marble staircase with glass balustrade" },
+      { src: "/images/applications/luxury-interior-projects/li-02.jpg", alt: "Marble-clad bathroom with backlit mirror" },
+    ],
     options: [
       "Single-source material sourcing across an entire project",
       "Custom furniture and fixture fabrication",

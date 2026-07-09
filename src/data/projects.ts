@@ -1,122 +1,74 @@
 import type { Project } from "@/types";
 
 /**
- * SAMPLE PLACEHOLDER PROJECTS — replace with real completed work and
- * photography before launch. Structure (category, materials, images) mirrors
- * exactly what a real project entry needs, so swapping in real content is a
- * drop-in edit: update the fields and add real photos to /public/images/projects.
- *
- * Add a new project by adding an object to this array — the /projects grid
- * and /projects/[slug] page pick it up automatically.
+ * Real completed projects. Add a new project by adding an object to this
+ * array — the /projects grid and /projects/[slug] page pick it up
+ * automatically. Add photos to /public/images/projects/<slug>/.
  */
 export const projects: Project[] = [
   {
-    slug: "riverside-residence",
-    title: "Riverside Residence",
-    location: "Sample project — replace with a real address/city",
+    slug: "pagani-tower-by-darglobal",
+    title: "Pagani Tower by DarGlobal",
+    location: "Dubai, UAE",
     category: "Residential",
-    materialSlugs: ["sintered-stone", "granite"],
-    applicationSlugs: ["kitchen-countertops", "flooring"],
+    materialSlugs: ["marble", "granite", "quartz"],
+    applicationSlugs: ["kitchen-countertops", "wall-cladding", "luxury-interior-projects"],
     summary:
-      "A full kitchen and living-area renovation pairing a sintered stone island with granite flooring throughout the ground floor.",
-    scope:
-      "Kitchen countertop and waterfall island, ground-floor flooring, and a matching bathroom vanity.",
-    squareFootage: "2,400 sq ft",
-    timeline: "6 weeks",
-    testimonial: {
-      quote:
-        "Replace with a real client or architect quote once the project is complete.",
-      author: "Client name",
-      role: "Homeowner",
+      "Natural stone supply for Pagani Tower, an ultra-luxury residential tower developed by DarGlobal in collaboration with Pagani Automobili.",
+    scope: "Stone supply for interior surfaces across the tower.",
+    images: [],
+    coverImage: {
+      src: "/images/projects/pagani-tower-darglobal.jpg",
+      alt: "Pagani Tower by DarGlobal facade",
     },
-    images: [],
-    coverImage: { src: "", alt: "Riverside Residence — sample project" },
   },
   {
-    slug: "the-orchard-house",
-    title: "The Orchard House",
-    location: "Sample project — replace with a real address/city",
-    category: "Residential",
-    materialSlugs: ["marble"],
-    applicationSlugs: ["wall-cladding", "luxury-interior-projects"],
-    summary:
-      "A book-matched marble feature wall anchoring a double-height entry hall.",
-    scope: "Entry hall cladding, staircase details, and powder room vanity.",
-    squareFootage: "600 sq ft of cladding",
-    timeline: "4 weeks",
-    images: [],
-    coverImage: { src: "", alt: "The Orchard House — sample project" },
-  },
-  {
-    slug: "meridian-office-tower",
-    title: "Meridian Office Tower — Lobby",
-    location: "Sample project — replace with a real address/city",
-    category: "Commercial",
-    materialSlugs: ["granite", "sintered-stone"],
+    slug: "american-university-of-sharjah",
+    title: "The American University of Sharjah",
+    location: "Sharjah, UAE",
+    category: "Institutional",
+    materialSlugs: ["marble", "limestone"],
     applicationSlugs: ["wall-cladding", "flooring"],
     summary:
-      "Large-format flooring and reception cladding for a corporate lobby renovation.",
-    scope: "Lobby flooring, reception desk, and feature wall cladding.",
-    squareFootage: "3,200 sq ft",
-    timeline: "10 weeks",
-    testimonial: {
-      quote:
-        "Replace with a real client or architect quote once the project is complete.",
-      author: "Project architect",
-      role: "Lead Architect",
+      "Natural stone supply and installation across the AUS campus, home to one of the region's most recognizable pieces of Islamic-influenced architecture.",
+    scope: "Stone facade detailing and flooring across campus buildings.",
+    images: [],
+    coverImage: {
+      src: "/images/projects/american-university-sharjah.jpg",
+      alt: "The American University of Sharjah facade",
     },
-    images: [],
-    coverImage: { src: "", alt: "Meridian Office Tower lobby — sample project" },
   },
   {
-    slug: "harbor-view-offices",
-    title: "Harbor View Offices",
-    location: "Sample project — replace with a real address/city",
-    category: "Commercial",
-    materialSlugs: ["quartz"],
-    applicationSlugs: ["kitchen-countertops"],
-    summary: "Break-room and pantry countertops across four office floors.",
-    scope: "Quartz countertops and backsplashes for four pantry areas.",
-    squareFootage: "180 sq ft of countertop",
-    timeline: "3 weeks",
-    images: [],
-    coverImage: { src: "", alt: "Harbor View Offices — sample project" },
-  },
-  {
-    slug: "the-lantern-hotel",
-    title: "The Lantern Hotel — Spa & Lobby",
-    location: "Sample project — replace with a real address/city",
-    category: "Hospitality",
-    materialSlugs: ["marble", "sintered-stone"],
-    applicationSlugs: ["flooring", "wall-cladding", "luxury-interior-projects"],
+    slug: "sharjah-education-council",
+    title: "Sharjah Education Council",
+    location: "Sharjah, UAE",
+    category: "Institutional",
+    materialSlugs: ["marble", "limestone"],
+    applicationSlugs: ["wall-cladding"],
     summary:
-      "A full material program spanning the lobby floor, spa wet areas, and guest bathroom vanities.",
-    scope: "Lobby flooring, spa wall cladding, and 120 guest bathroom vanities.",
-    squareFootage: "8,500 sq ft",
-    timeline: "16 weeks",
-    testimonial: {
-      quote:
-        "Replace with a real client or architect quote once the project is complete.",
-      author: "Development team",
-      role: "Owner's Representative",
+      "Stone supply and facade work for the Sharjah Education Council building, delivered for the Government of Sharjah.",
+    scope: "Exterior stone cladding and detailing.",
+    images: [],
+    coverImage: {
+      src: "/images/projects/sharjah-education-council.jpg",
+      alt: "Sharjah Education Council building facade",
     },
-    images: [],
-    coverImage: { src: "", alt: "The Lantern Hotel — sample project" },
   },
   {
-    slug: "coastal-club-restaurant",
-    title: "Coastal Club Restaurant",
-    location: "Sample project — replace with a real address/city",
-    category: "Hospitality",
-    materialSlugs: ["granite", "quartz"],
-    applicationSlugs: ["kitchen-countertops", "flooring"],
+    slug: "sharjah-suburbs-and-villages-affairs",
+    title: "Sharjah Suburbs and Villages Affairs Department",
+    location: "Sharjah, UAE",
+    category: "Institutional",
+    materialSlugs: ["marble", "limestone"],
+    applicationSlugs: ["wall-cladding"],
     summary:
-      "Back-of-house and bar countertops built for a high-volume restaurant kitchen.",
-    scope: "Bar countertop, service line, and back-of-house prep surfaces.",
-    squareFootage: "450 sq ft of countertop",
-    timeline: "5 weeks",
+      "Natural stone facade for a Government of Sharjah civic building, part of our ongoing work with Sharjah government departments.",
+    scope: "Exterior stone cladding and entrance detailing.",
     images: [],
-    coverImage: { src: "", alt: "Coastal Club Restaurant — sample project" },
+    coverImage: {
+      src: "/images/projects/sharjah-suburbs-affairs.jpg",
+      alt: "Sharjah Suburbs and Villages Affairs Department building facade",
+    },
   },
 ];
 
@@ -124,4 +76,9 @@ export function getProjectBySlug(slug: string) {
   return projects.find((p) => p.slug === slug);
 }
 
-export const projectCategories = ["Residential", "Commercial", "Hospitality"] as const;
+export const projectCategories = [
+  "Residential",
+  "Commercial",
+  "Hospitality",
+  "Institutional",
+] as const;
