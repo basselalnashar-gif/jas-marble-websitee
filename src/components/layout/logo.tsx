@@ -19,7 +19,7 @@ export function Logo({
       )}
       aria-label={`${site.name} — home`}
     >
-      <span className="relative block h-8 w-8 shrink-0">
+      <span className="relative block aspect-[219/126] h-11 w-auto shrink-0">
         <Image
           src="/images/logo/logo-mark-navy.png"
           alt=""
@@ -36,8 +36,8 @@ export function Logo({
         />
       </span>
       {!markOnly ? (
-        <span className="font-display text-[1.05rem] font-medium leading-none tracking-tight text-fg">
-          {site.shortName}
+        <span className="whitespace-nowrap font-display text-sm font-medium leading-none tracking-tight text-fg-muted sm:text-lg">
+          {site.name}
         </span>
       ) : null}
     </Link>
