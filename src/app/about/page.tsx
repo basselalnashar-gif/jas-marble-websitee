@@ -1,15 +1,14 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { PageIntro } from "@/components/layout/page-intro";
-import { PlaceholderImage } from "@/components/ui/placeholder-image";
-import { Reveal } from "@/components/ui/reveal";
+import { Reveal, StaggerGroup, StaggerItem } from "@/components/ui/reveal";
 import { Button } from "@/components/ui/button";
 import { site } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Our story and craftsmanship process — the people and process behind Jabal Al-Sheikh Marble.",
+    "Founded in 1989 in Ajman, UAE — the story, divisions, and craftsmanship process behind Jabal Al-Sheikh Marble.",
 };
 
 export default function AboutPage() {
@@ -18,7 +17,7 @@ export default function AboutPage() {
       <PageIntro
         eyebrow="About"
         title="Our Story"
-        description={`The name ${site.name} carries the weight of the mountain it's named for — a symbol of permanence, standing since long before us and long after. We build every piece of stone we fabricate to carry that same sense of permanence into the spaces our clients live and work in.`}
+        description={`The name ${site.name} carries the weight of the mountain it's named for — a symbol of permanence, standing since long before us and long after. Founded in ${site.founded} by ${site.founder}, we've built every piece of stone we fabricate to carry that same sense of permanence into the spaces our clients live and work in.`}
       />
 
       <section className="container-px mx-auto max-w-8xl pb-20 sm:pb-24">
@@ -42,11 +41,35 @@ export default function AboutPage() {
               {site.nameArabic}
             </p>
             <p className="max-w-md text-sm text-fg-muted">
-              {site.name} — named for Jabal Al-Sheikh, the mountain, and
-              carrying that heritage into every project we take on.
+              Headquartered in Ajman, UAE, {site.name} has grown since{" "}
+              {site.founded} into three divisions working under one roof —
+              from raw block to finished, installed surface.
             </p>
           </div>
         </Reveal>
+      </section>
+
+      <section className="container-px mx-auto max-w-8xl pb-20 sm:pb-24">
+        <Reveal>
+          <h2 className="font-display text-2xl font-medium tracking-tight sm:text-3xl">
+            Three divisions, one standard
+          </h2>
+        </Reveal>
+        <StaggerGroup className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-3">
+          {site.divisions.map((division) => (
+            <StaggerItem
+              key={division.name}
+              className="rounded-2xl border border-hairline bg-canvas-alt p-8"
+            >
+              <h3 className="font-display text-lg font-medium text-fg">
+                {division.name}
+              </h3>
+              <p className="mt-3 text-sm leading-relaxed text-fg-muted">
+                {division.description}
+              </p>
+            </StaggerItem>
+          ))}
+        </StaggerGroup>
       </section>
 
       <section className="container-px mx-auto max-w-8xl pb-24 sm:pb-32">
@@ -69,12 +92,53 @@ export default function AboutPage() {
             </Button>
           </Reveal>
           <Reveal delay={0.1}>
-            <PlaceholderImage
-              label="Workshop & fabrication photography coming soon"
-              className="aspect-[4/3] w-full rounded-2xl"
-            />
+            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl">
+              <Image
+                src="/images/about/factory-worker.jpg"
+                alt="Fabrication of a marble slab in the Jabal Al-Sheikh workshop"
+                fill
+                className="object-cover"
+              />
+            </div>
           </Reveal>
         </div>
+      </section>
+
+      <section className="border-t border-hairline bg-canvas-alt py-20 sm:py-24">
+        <div className="container-px mx-auto max-w-8xl">
+          <Reveal>
+            <h2 className="font-display text-2xl font-medium tracking-tight sm:text-3xl">
+              Our Team
+            </h2>
+            <p className="mt-4 max-w-2xl text-base leading-relaxed text-fg-muted">
+              A highly qualified, hands-on team — from management to
+              fabrication — trained to deliver every project with the same
+              attention to detail, whatever its scale.
+            </p>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <div className="relative mt-10 aspect-[16/6] w-full overflow-hidden rounded-2xl">
+              <Image
+                src="/images/team/team-storefront.jpg"
+                alt="The Jabal Al-Sheikh Marble team outside the showroom"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      <section className="container-px mx-auto max-w-8xl py-20 sm:py-24">
+        <Reveal>
+          <p className="max-w-3xl text-sm leading-relaxed text-fg-muted">
+            Recognized by the UAE Ministry of Interior (Ajman Police G.H.Q.)
+            and the Ministry of Human Resources &amp; Emiratisation for our
+            community contribution, and trusted by government and private
+            clients including the Government of Sharjah, Ali &amp; Sons
+            Contracting, and Durar Group.
+          </p>
+        </Reveal>
       </section>
     </>
   );
