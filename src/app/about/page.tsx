@@ -57,12 +57,12 @@ export default function AboutPage() {
             </h2>
             <p className="mt-4 text-base leading-relaxed text-fg-muted">
               Every project moves through the same disciplined process,
-              whether it's a single countertop or a full building program:
+              whether it&apos;s a single countertop or a full building program:
               careful material selection, precise fabrication in our own
               workshop, and installation by a team that treats each slab as
               a finished piece, not a commodity. We control every stage
               ourselves, from the block to the final polish, so quality
-              never depends on a subcontractor we don't oversee directly.
+              never depends on a subcontractor we don&apos;t oversee directly.
             </p>
             <Button href="/contact" variant="secondary" className="mt-8">
               Start a Conversation
