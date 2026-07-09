@@ -7,7 +7,7 @@ import { materials } from "@/data/materials";
 export const metadata: Metadata = {
   title: "Materials",
   description:
-    "Marble, granite, quartz, and sintered stone — explore specifications, finishes, and ideal applications for each material we work with.",
+    "Marble, granite, quartz, sintered stone, travertine, onyx, and limestone — explore specifications, finishes, and ideal applications for each material we work with.",
 };
 
 export default function MaterialsPage() {
@@ -15,7 +15,7 @@ export default function MaterialsPage() {
     <>
       <PageIntro
         eyebrow="Materials"
-        title="Four materials, each with its own character."
+        title="Seven materials, each with its own character."
         description="Every project starts with choosing the right material for how a space will be lived in and used. Explore specifications, finishes, and best applications for each."
       />
       <section className="container-px mx-auto max-w-8xl pb-24 sm:pb-32">
