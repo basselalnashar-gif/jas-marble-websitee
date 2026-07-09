@@ -6,7 +6,7 @@ import { projects } from "@/data/projects";
 export const metadata: Metadata = {
   title: "Projects",
   description:
-    "Residential, commercial, and hospitality projects fabricated and installed by Jabal Al-Sheikh Marble.",
+    "Landmark residential and institutional projects fabricated and installed by Jabal Al-Sheikh Marble, including Pagani Tower by DarGlobal and the American University of Sharjah.",
 };
 
 export default function ProjectsPage() {
@@ -15,7 +15,7 @@ export default function ProjectsPage() {
       <PageIntro
         eyebrow="Projects"
         title="Recent work"
-        description="A selection of residential, commercial, and hospitality projects — filter by category to explore."
+        description="Landmark residential and institutional projects — filter by category to explore."
       />
       <section className="container-px mx-auto max-w-8xl pb-24 sm:pb-32">
         <ProjectGrid projects={projects} />
