@@ -9,6 +9,11 @@ export type MaterialSpec = {
   value: string;
 };
 
+export type MaterialVariety = {
+  name: string;
+  image: ImageRef;
+};
+
 export type Material = {
   slug: string;
   name: string;
@@ -17,6 +22,8 @@ export type Material = {
   description: string;
   /** Real photography if available; otherwise the material renders a styled placeholder. */
   images: ImageRef[];
+  /** Named colors/varieties available within this material, shown as a labeled catalog. */
+  varieties?: MaterialVariety[];
   specs: MaterialSpec[];
   bestUseCases: string[];
 };
