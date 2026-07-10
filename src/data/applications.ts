@@ -101,6 +101,40 @@ export const applications: Application[] = [
     ],
     recommendedMaterialSlugs: ["marble", "granite", "quartz", "sintered-stone"],
   },
+  {
+    slug: "staircase",
+    name: "Staircase",
+    tagline: "A first impression, carved in stone",
+    description:
+      "The staircase is often the focal point of a home or lobby — every tread, riser, and handrail detail is visible at once. We fabricate staircases in marble, travertine, and granite, from book-matched risers to fully clad curved and floating designs, with precision cutting for glass balustrades and integrated lighting.",
+    images: [
+      { src: "/images/applications/staircase/st-01.jpg", alt: "Grey marble staircase with glass balustrade and hanging feather lights" },
+      { src: "/images/applications/staircase/st-02.jpg", alt: "Travertine staircase with glass railing, seen from above" },
+      { src: "/images/applications/staircase/st-03.jpg", alt: "Curved black and white marble staircase under construction" },
+      { src: "/images/applications/staircase/st-04.jpg", alt: "White marble staircase with book-matched veining against a travertine wall" },
+      { src: "/images/applications/staircase/st-05.jpg", alt: "Marble staircase installation with scaffolding in an unfinished stairwell" },
+      { src: "/images/applications/staircase/st-06.jpg", alt: "Floating marble staircase with glass balustrade and herringbone floor" },
+      { src: "/images/applications/staircase/st-07.jpg", alt: "Travertine staircase with black metal trim and recessed lighting" },
+      { src: "/images/applications/staircase/st-08.jpg", alt: "Grey marble staircase with brass handrail and hanging feather lights" },
+      { src: "/images/applications/staircase/st-09.jpg", alt: "Beige travertine staircase with wall cladding detail" },
+      { src: "/images/applications/staircase/st-10.jpg", alt: "Travertine staircase with wood-trimmed glass balustrade" },
+      { src: "/images/applications/staircase/st-11.jpg", alt: "Grey marble staircase with black metal railing beside an olive tree" },
+      { src: "/images/applications/staircase/st-12.jpg", alt: "Travertine staircase with recessed step lighting" },
+    ],
+    options: [
+      "Book-matched and curved riser fabrication",
+      "Marble, travertine, granite, and sintered stone treads",
+      "Precision cutouts for glass and metal balustrades",
+      "Integrated LED step lighting channels",
+    ],
+    process: [
+      { title: "Consultation", description: "We review the staircase design, structure, and material preferences." },
+      { title: "Template & measure", description: "On-site templating of every tread, riser, and landing." },
+      { title: "Fabrication", description: "Slabs are cut, book-matched, and finished to the exact profile." },
+      { title: "Install", description: "Careful on-site installation, including balustrade coordination." },
+    ],
+    recommendedMaterialSlugs: ["marble", "travertine", "granite"],
+  },
 ];
 
 export function getApplicationBySlug(slug: string) {
