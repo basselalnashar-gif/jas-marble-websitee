@@ -105,6 +105,31 @@ export default function ApplicationPage({
         </div>
       </section>
 
+      {application.images.length > 1 ? (
+        <section className="container-px mx-auto max-w-8xl pb-20 sm:pb-24">
+          <Reveal>
+            <h2 className="mb-8 font-display text-2xl font-medium tracking-tight">
+              Gallery
+            </h2>
+          </Reveal>
+          <StaggerGroup className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+            {application.images.map((image) => (
+              <StaggerItem key={image.src}>
+                <div className="relative aspect-[4/5] overflow-hidden rounded-xl">
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    fill
+                    className="object-cover transition-transform duration-700 ease-premium hover:scale-[1.05]"
+                    sizes="(min-width: 1024px) 25vw, 33vw"
+                  />
+                </div>
+              </StaggerItem>
+            ))}
+          </StaggerGroup>
+        </section>
+      ) : null}
+
       <section className="border-y border-hairline bg-canvas-alt py-20 sm:py-24">
         <div className="container-px mx-auto max-w-8xl">
           <Reveal>
