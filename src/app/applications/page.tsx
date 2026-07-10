@@ -7,7 +7,7 @@ import { applications } from "@/data/applications";
 export const metadata: Metadata = {
   title: "Applications",
   description:
-    "Kitchen countertops, flooring, wall cladding, and luxury interior projects — see how stone comes together in every part of a space.",
+    "Kitchen countertops, flooring, wall cladding, staircases, and luxury interior projects — see how stone comes together in every part of a space.",
 };
 
 export default function ApplicationsPage() {
