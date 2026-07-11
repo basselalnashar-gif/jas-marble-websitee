@@ -7,7 +7,7 @@ const yearsInBusiness = currentYear - site.founded;
 const stats = [
   { value: `${site.founded}`, label: "Founded in Ajman, UAE" },
   { value: `${yearsInBusiness}+`, label: "Years of craftsmanship" },
-  { value: "3", label: "Divisions under one roof" },
+  { value: "2", label: "Divisions under one roof" },
   { value: "7", label: "Natural & engineered stones" },
 ];
 
