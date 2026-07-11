@@ -7,6 +7,7 @@ import { materials } from "@/data/materials";
 import { projects } from "@/data/projects";
 import { PlaceholderImage } from "@/components/ui/placeholder-image";
 import { Reveal, StaggerGroup, StaggerItem } from "@/components/ui/reveal";
+import { LightboxGallery } from "@/components/ui/lightbox-gallery";
 import { Button } from "@/components/ui/button";
 import { MaterialCard } from "@/components/cards/material-card";
 import { ProjectCard } from "@/components/cards/project-card";
@@ -112,21 +113,7 @@ export default function ApplicationPage({
               Gallery
             </h2>
           </Reveal>
-          <StaggerGroup className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
-            {application.images.map((image) => (
-              <StaggerItem key={image.src}>
-                <div className="relative aspect-[4/5] overflow-hidden rounded-xl">
-                  <Image
-                    src={image.src}
-                    alt={image.alt}
-                    fill
-                    className="object-cover transition-transform duration-700 ease-premium hover:scale-[1.05]"
-                    sizes="(min-width: 1024px) 25vw, 33vw"
-                  />
-                </div>
-              </StaggerItem>
-            ))}
-          </StaggerGroup>
+          <LightboxGallery images={application.images} />
         </section>
       ) : null}
 
