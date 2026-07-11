@@ -1,20 +1,54 @@
 "use client";
 
+import * as React from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 
+const slides = [
+  "/images/hero/slideshow/hero-slab-01.jpg",
+  "/images/hero/slideshow/hero-slab-02.jpg",
+  "/images/hero/slideshow/hero-slab-03.jpg",
+  "/images/hero/slideshow/hero-slab-04.jpg",
+  "/images/hero/slideshow/hero-slab-05.jpg",
+  "/images/hero/slideshow/hero-slab-06.jpg",
+  "/images/hero/slideshow/hero-slab-07.jpg",
+  "/images/hero/slideshow/hero-slab-08.jpg",
+];
+
+const SLIDE_DURATION = 5000;
+
 export function Hero() {
+  const [index, setIndex] = React.useState(0);
+
+  React.useEffect(() => {
+    const timer = setInterval(() => {
+      setIndex((current) => (current + 1) % slides.length);
+    }, SLIDE_DURATION);
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <section className="relative flex h-[92vh] min-h-[640px] w-full items-end overflow-hidden">
-      <Image
-        src="/images/hero/hero-sintered-stone.jpg"
-        alt="Sintered stone slab with dramatic natural veining, studio lit"
-        fill
-        priority
-        className="object-cover"
-        sizes="100vw"
-      />
+      <AnimatePresence initial={false}>
+        <motion.div
+          key={slides[index]}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+          className="absolute inset-0"
+        >
+          <Image
+            src={slides[index]}
+            alt="Natural stone slab with dramatic veining, studio lit"
+            fill
+            priority={index === 0}
+            className="object-cover"
+            sizes="100vw"
+          />
+        </motion.div>
+      </AnimatePresence>
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-black/10" />
 
       <div className="container-px relative mx-auto w-full max-w-8xl pb-20 pt-40 sm:pb-28">
