@@ -30,10 +30,6 @@ export const site = {
       name: "Jabal Al Sheikh Contracting",
       description: "Full interior finishing and contracting services.",
     },
-    {
-      name: "Jabal Al Sheikh Darna Interiors",
-      description: "Bespoke luxury interior design and fit-out.",
-    },
   ],
   clients: [
     { name: "Nesto", logo: "/images/clients/nesto.jpg" },
