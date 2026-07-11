@@ -40,16 +40,19 @@ type ButtonAsButton = BaseProps & {
 } & Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, keyof BaseProps>;
 
 export function Button(props: ButtonAsLink | ButtonAsButton) {
-  const { variant = "primary", size = "md", className, children } = props;
+  // Destructure every BaseProps key out up front so `rest` can never contain
+  // a stray variant/size/className/children that would leak onto the DOM
+  // node or silently override the merged `classes` string via spread order.
+  const { variant = "primary", size = "md", className, children, ...rest } = props;
   const classes = cn(base, variants[variant], sizes[size], className);
 
-  if ("href" in props && props.href) {
-    const { href, ...rest } = props as ButtonAsLink;
+  if ("href" in rest && rest.href) {
+    const { href, ...linkRest } = rest as { href: string } & typeof rest;
     return (
       <Link
         href={href}
         className={classes}
-        {...(rest as Omit<
+        {...(linkRest as Omit<
           React.AnchorHTMLAttributes<HTMLAnchorElement>,
           keyof BaseProps
         >)}
@@ -59,7 +62,6 @@ export function Button(props: ButtonAsLink | ButtonAsButton) {
     );
   }
 
-  const { ...rest } = props as ButtonAsButton;
   return (
     <button
       className={classes}
