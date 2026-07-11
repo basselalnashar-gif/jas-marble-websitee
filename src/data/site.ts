@@ -18,7 +18,7 @@ export const site = {
     hours: "Sat–Thu: 9:00 AM – 6:00 PM · Friday: By appointment",
   },
   social: {
-    instagram: "https://instagram.com",
+    instagram: "https://www.instagram.com/jabalalsheikhmarble",
     linkedin: "https://linkedin.com",
     facebook: "https://facebook.com",
   },
