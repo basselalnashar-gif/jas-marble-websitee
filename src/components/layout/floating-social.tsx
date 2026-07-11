@@ -8,7 +8,7 @@ import { REQUESTS_WHATSAPP_NUMBER } from "@/lib/whatsapp";
  */
 export function FloatingSocial() {
   return (
-    <div className="fixed inset-x-0 bottom-5 z-40 flex justify-center gap-3 sm:inset-x-auto sm:right-5 sm:flex-col">
+    <div className="fixed bottom-5 right-5 z-40 flex flex-col gap-3">
       <a
         href={`https://wa.me/${REQUESTS_WHATSAPP_NUMBER}`}
         target="_blank"
