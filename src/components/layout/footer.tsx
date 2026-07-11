@@ -32,7 +32,7 @@ export function Footer() {
                   className="hidden object-contain dark:block"
                 />
               </span>
-              <span className="font-display text-base font-medium text-fg">
+              <span className="font-brand text-base font-semibold text-fg">
                 {site.shortName}
               </span>
             </Link>

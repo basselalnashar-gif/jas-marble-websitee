@@ -55,7 +55,7 @@ export function Logo({
       {!markOnly ? (
         <span
           className={cn(
-            "whitespace-nowrap font-display text-sm font-medium leading-none tracking-tight sm:text-lg",
+            "whitespace-nowrap font-brand text-sm font-semibold leading-none tracking-tight sm:text-lg",
             theme === "onDark" ? "text-white/90" : "text-fg-muted"
           )}
         >
