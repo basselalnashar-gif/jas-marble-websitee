@@ -14,6 +14,7 @@ export const materials: Material[] = [
     description:
       "Natural marble has been the material of choice for the world's most enduring architecture for a reason: no two slabs are alike, and its soft veining brings warmth and movement no engineered surface can fully replicate. We select and fabricate marble for countertops, flooring, wall cladding, and signature interior features.",
     images: [
+      { src: "/images/materials/marble/marble-hero-rosa-levanto.jpg", alt: "Rosa Levanto marble slab texture" },
       { src: "/images/materials/marble/marble-01.jpg", alt: "Marble stair treads, fabricated and installed" },
       { src: "/images/materials/marble/marble-02.jpg", alt: "Book-matched marble vanity countertop" },
       { src: "/images/materials/marble/marble-03.jpg", alt: "Bookmatched dark marble slab, floor-to-ceiling" },
