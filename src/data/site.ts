@@ -12,7 +12,9 @@ export const site = {
     phoneMobile: "+971 52 692 5128",
     whatsapp: "https://wa.me/971526925128",
     email: "info@jasmarble.com",
-    address: "Ajman, United Arab Emirates",
+    address: "63/52 Sheikh Ammar Bin Humaid Street, Jurf Industrial 1, Ajman, United Arab Emirates",
+    mapsUrl: "https://www.google.com/maps/search/?api=1&query=Jabal+Al+Sheikh+Marble+Sheikh+Ammar+Bin+Humaid+Street+Jurf+Industrial+1+Ajman+UAE",
+    mapsEmbedUrl: "https://www.google.com/maps?q=Jabal+Al+Sheikh+Marble,+Sheikh+Ammar+Bin+Humaid+Street,+Jurf+Industrial+1,+Ajman,+UAE&output=embed",
     hours: "Sat–Thu: 9:00 AM – 6:00 PM · Friday: By appointment",
   },
   social: {
