@@ -60,7 +60,21 @@ export const materials: Material[] = [
     description:
       "Granite is among the hardest natural stones available, prized for kitchens and high-traffic surfaces that need to perform as well as they look. Its crystalline structure gives every slab a distinctive, speckled depth.",
     images: [
+      { src: "/images/materials/granite/varieties/kuppam-white.jpg", alt: "Kuppam White granite slab texture" },
       { src: "/images/materials/granite/granite-01.jpg", alt: "Granite double-vanity bathroom countertop" },
+    ],
+    varieties: [
+      { name: "Kuppam White", image: { src: "/images/materials/granite/varieties/kuppam-white.jpg", alt: "Kuppam White granite slab" } },
+      { name: "Green Pearl", image: { src: "/images/materials/granite/varieties/green-pearl.jpg", alt: "Green Pearl granite slab" } },
+      { name: "Luna Pearl", image: { src: "/images/materials/granite/varieties/luna-pearl.jpg", alt: "Luna Pearl granite slab" } },
+      { name: "Kashmir White", image: { src: "/images/materials/granite/varieties/kashmir-white.jpg", alt: "Kashmir White granite slab" } },
+      { name: "Moon White", image: { src: "/images/materials/granite/varieties/moon-white.jpg", alt: "Moon White granite slab" } },
+      { name: "Desert Brown", image: { src: "/images/materials/granite/varieties/desert-brown.jpg", alt: "Desert Brown granite slab" } },
+      { name: "Tan Brown", image: { src: "/images/materials/granite/varieties/tan-brown.jpg", alt: "Tan Brown granite slab" } },
+      { name: "Red Multi", image: { src: "/images/materials/granite/varieties/red-multi.jpg", alt: "Red Multi granite slab" } },
+      { name: "Blue Dunes", image: { src: "/images/materials/granite/varieties/blue-dunes.jpg", alt: "Blue Dunes granite slab" } },
+      { name: "Colonial White", image: { src: "/images/materials/granite/varieties/colonial-white.jpg", alt: "Colonial White granite slab" } },
+      { name: "Colonial Gold", image: { src: "/images/materials/granite/varieties/colonial-gold.jpg", alt: "Colonial Gold granite slab" } },
     ],
     specs: [
       { label: "Durability", value: "Excellent — resists scratching and chipping" },
