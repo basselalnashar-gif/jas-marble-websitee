@@ -87,9 +87,6 @@ export default function AboutPage() {
               long-term relationships with all our clients.&rdquo;
             </blockquote>
             <p className="mt-6 text-sm font-medium text-fg">
-              {site.founder}
-            </p>
-            <p className="text-sm text-fg-muted">
               Founder &amp; Managing Director
             </p>
           </div>
