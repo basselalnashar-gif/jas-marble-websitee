@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Playfair_Display, Inter } from "next/font/google";
+import { Playfair_Display, Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import { Header } from "@/components/layout/header";
@@ -18,6 +18,15 @@ const displayFont = Playfair_Display({
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
+  display: "swap",
+});
+
+// Matches the bold geometric sans used for "Jabal Al-Sheikh Marble" in the
+// brand's own logo/wordmark file — used for the site name next to the logo mark.
+const brandFont = Poppins({
+  subsets: ["latin"],
+  variable: "--font-brand",
+  weight: ["600", "700", "800"],
   display: "swap",
 });
 
@@ -89,7 +98,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${displayFont.variable} ${inter.variable} font-sans antialiased`}
+        className={`${displayFont.variable} ${inter.variable} ${brandFont.variable} font-sans antialiased`}
       >
         <script
           type="application/ld+json"
