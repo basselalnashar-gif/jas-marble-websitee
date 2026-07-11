@@ -11,7 +11,7 @@ export const site = {
     phone: "+971 6 748 9265",
     phoneMobile: "+971 52 692 5128",
     whatsapp: "https://wa.me/971526925128",
-    email: "jabal_alshiekh@hotmail.com",
+    email: "info@jasmarble.com",
     address: "Ajman, United Arab Emirates",
     hours: "Sat–Thu: 9:00 AM – 6:00 PM · Friday: By appointment",
   },
