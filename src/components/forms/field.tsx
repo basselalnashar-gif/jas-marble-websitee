@@ -1,7 +1,7 @@
 import * as React from "react";
 import { cn } from "@/lib/utils";
 
-const inputClasses =
+export const inputClasses =
   "w-full rounded-lg border border-hairline bg-surface px-4 py-3 text-sm text-fg placeholder:text-fg-muted/60 transition-colors duration-200 focus:border-navy-500 focus:outline-none focus:ring-1 focus:ring-navy-500";
 
 export function Field({

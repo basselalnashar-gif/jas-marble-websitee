@@ -3,8 +3,10 @@
 import * as React from "react";
 import { CheckCircle2, Loader2 } from "lucide-react";
 import { Field, Input, Select, Textarea } from "@/components/forms/field";
+import { PhoneField } from "@/components/forms/phone-field";
 import { Button } from "@/components/ui/button";
 import { materials } from "@/data/materials";
+import { sendToWhatsApp } from "@/lib/whatsapp";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
@@ -18,11 +20,15 @@ export function QuoteForm() {
 
     const form = e.currentTarget;
     const formData = new FormData(form);
+    const phone = [formData.get("phoneCountry"), formData.get("phoneNumber")]
+      .filter(Boolean)
+      .join(" ")
+      .trim();
     const payload = {
       role: formData.get("role"),
       name: formData.get("name"),
       email: formData.get("email"),
-      phone: formData.get("phone"),
+      phone,
       projectType: formData.get("projectType"),
       materialInterest: formData.get("materialInterest"),
       projectStage: formData.get("projectStage"),
@@ -32,18 +38,35 @@ export function QuoteForm() {
     };
 
     try {
-      const res = await fetch("/api/quote-request", {
+      await fetch("/api/quote-request", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       });
-      if (!res.ok) throw new Error("Request failed");
-      setStatus("success");
-      form.reset();
-      setFileName(null);
     } catch {
-      setStatus("error");
+      // Best-effort logging only — WhatsApp below is the primary delivery path.
     }
+
+    sendToWhatsApp(
+      [
+        "New quote request from jasmarble.com",
+        `Name: ${payload.name}`,
+        `Email: ${payload.email}`,
+        phone ? `Phone: ${phone}` : null,
+        `I am a: ${payload.role}`,
+        `Project type: ${payload.projectType}`,
+        payload.materialInterest ? `Material interest: ${payload.materialInterest}` : null,
+        payload.projectStage ? `Project stage: ${payload.projectStage}` : null,
+        payload.budgetRange ? `Budget range: ${payload.budgetRange}` : null,
+        payload.message ? `Message: ${payload.message}` : null,
+      ]
+        .filter(Boolean)
+        .join("\n")
+    );
+
+    setStatus("success");
+    form.reset();
+    setFileName(null);
   }
 
   if (status === "success") {
@@ -87,9 +110,7 @@ export function QuoteForm() {
         </Field>
       </div>
 
-      <Field label="Phone" htmlFor="phone">
-        <Input id="phone" name="phone" type="tel" placeholder="+1 (555) 000-0000" />
-      </Field>
+      <PhoneField label="Phone" />
 
       <div className="grid gap-6 sm:grid-cols-2">
         <Field label="Project type" htmlFor="projectType" required>

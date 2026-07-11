@@ -3,7 +3,9 @@
 import * as React from "react";
 import { CheckCircle2, Loader2 } from "lucide-react";
 import { Field, Input, Select, Textarea } from "@/components/forms/field";
+import { PhoneField } from "@/components/forms/phone-field";
 import { Button } from "@/components/ui/button";
+import { sendToWhatsApp } from "@/lib/whatsapp";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
@@ -16,27 +18,45 @@ export function TradeForm() {
 
     const form = e.currentTarget;
     const formData = new FormData(form);
+    const phone = [formData.get("phoneCountry"), formData.get("phoneNumber")]
+      .filter(Boolean)
+      .join(" ")
+      .trim();
     const payload = {
       companyName: formData.get("companyName"),
       contactName: formData.get("contactName"),
       email: formData.get("email"),
-      phone: formData.get("phone"),
+      phone,
       role: formData.get("role"),
       message: formData.get("message"),
     };
 
     try {
-      const res = await fetch("/api/trade-request", {
+      await fetch("/api/trade-request", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       });
-      if (!res.ok) throw new Error("Request failed");
-      setStatus("success");
-      form.reset();
     } catch {
-      setStatus("error");
+      // Best-effort logging only — WhatsApp below is the primary delivery path.
     }
+
+    sendToWhatsApp(
+      [
+        "New trade account request from jasmarble.com",
+        `Company: ${payload.companyName}`,
+        `Contact: ${payload.contactName}`,
+        `Email: ${payload.email}`,
+        phone ? `Phone: ${phone}` : null,
+        `I am a: ${payload.role}`,
+        payload.message ? `Message: ${payload.message}` : null,
+      ]
+        .filter(Boolean)
+        .join("\n")
+    );
+
+    setStatus("success");
+    form.reset();
   }
 
   if (status === "success") {
@@ -72,9 +92,7 @@ export function TradeForm() {
         <Field label="Email" htmlFor="email" required>
           <Input id="email" name="email" type="email" required placeholder="jane@studio.com" />
         </Field>
-        <Field label="Phone" htmlFor="phone">
-          <Input id="phone" name="phone" type="tel" placeholder="+1 (555) 000-0000" />
-        </Field>
+        <PhoneField label="Phone" />
       </div>
 
       <Field label="I am a..." htmlFor="role" required>
