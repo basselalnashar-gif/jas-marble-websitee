@@ -6,6 +6,7 @@ import { getMaterialBySlug, materials } from "@/data/materials";
 import { projects } from "@/data/projects";
 import { PlaceholderImage } from "@/components/ui/placeholder-image";
 import { Reveal, StaggerGroup, StaggerItem } from "@/components/ui/reveal";
+import { LightboxGallery } from "@/components/ui/lightbox-gallery";
 import { Button } from "@/components/ui/button";
 import { ProjectCard } from "@/components/cards/project-card";
 
@@ -115,22 +116,14 @@ export default function MaterialPage({
                 A selection of the {material.name.toLowerCase()} varieties available through JAS Marble.
               </p>
             </Reveal>
-            <StaggerGroup className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
-              {material.varieties.map((variety) => (
-                <StaggerItem key={variety.name}>
-                  <div className="relative aspect-square overflow-hidden rounded-xl">
-                    <Image
-                      src={variety.image.src}
-                      alt={variety.image.alt}
-                      fill
-                      className="object-cover transition-transform duration-700 ease-premium hover:scale-[1.05]"
-                      sizes="(min-width: 1024px) 25vw, 33vw"
-                    />
-                  </div>
-                  <p className="mt-2 text-sm font-medium text-fg">{variety.name}</p>
-                </StaggerItem>
-              ))}
-            </StaggerGroup>
+            <LightboxGallery
+              images={material.varieties.map((variety) => ({
+                src: variety.image.src,
+                alt: variety.image.alt,
+                caption: variety.name,
+              }))}
+              tileClassName="aspect-square"
+            />
           </div>
         </section>
       ) : null}
