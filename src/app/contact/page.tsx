@@ -75,14 +75,25 @@ export default function ContactPage() {
               </p>
             </div>
 
-            {/*
-              Swap this block for a real embedded map once you have a
-              showroom address — e.g. an <iframe> with a Google Maps embed
-              URL, or a component from @vis.gl/react-google-maps.
-            */}
-            <div className="flex aspect-[4/3] flex-col items-center justify-center gap-2 rounded-2xl border border-dashed border-hairline bg-canvas-alt text-center text-sm text-fg-muted">
-              <MapPin className="h-5 w-5" strokeWidth={1.25} />
-              Map — add your showroom location here
+            <div className="overflow-hidden rounded-2xl border border-hairline">
+              <div className="aspect-[4/3] w-full">
+                <iframe
+                  src={site.contact.mapsEmbedUrl}
+                  className="h-full w-full border-0"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Jabal Al-Sheikh Marble location"
+                />
+              </div>
+              <a
+                href={site.contact.mapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 border-t border-hairline bg-surface px-4 py-3 text-sm text-fg hover:text-navy-dynamic"
+              >
+                <MapPin className="h-4 w-4 shrink-0" strokeWidth={1.5} />
+                Open in Google Maps
+              </a>
             </div>
           </Reveal>
         </div>
