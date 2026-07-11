@@ -63,10 +63,15 @@ export default function ContactPage() {
                 <Calendar className="h-3.5 w-3.5" strokeWidth={1.5} />
                 Showroom Visit
               </h3>
-              <div className="flex items-start gap-3 text-sm text-fg-muted">
+              <a
+                href={site.contact.mapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-start gap-3 text-sm text-fg-muted hover:text-fg"
+              >
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0" strokeWidth={1.5} />
                 <span>{site.contact.address}</span>
-              </div>
+              </a>
               <p className="mt-3 text-sm text-fg-muted">{site.contact.hours}</p>
               <p className="mt-4 text-sm text-fg-muted">
                 Prefer to see samples in person? Call or message us on
