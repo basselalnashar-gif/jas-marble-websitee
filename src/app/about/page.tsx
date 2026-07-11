@@ -1,9 +1,26 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { Check } from "lucide-react";
 import { PageIntro } from "@/components/layout/page-intro";
 import { Reveal, StaggerGroup, StaggerItem } from "@/components/ui/reveal";
 import { Button } from "@/components/ui/button";
 import { site } from "@/data/site";
+
+const services = [
+  "Supply and application of all types of marbles and stones",
+  "Manufacture and installation of vanity counters",
+  "All types of interior finishing",
+  "Manufacture of adhesive materials",
+];
+
+const capabilities = [
+  "Marble Fabrication",
+  "Stone Cladding",
+  "Luxury Interiors",
+  "Villa Projects",
+  "Commercial Projects",
+  "Custom Designs",
+];
 
 export const metadata: Metadata = {
   title: "About",
@@ -42,7 +59,7 @@ export default function AboutPage() {
             </p>
             <p className="max-w-md text-sm text-fg-muted">
               Headquartered in Ajman, UAE, {site.name} has grown since{" "}
-              {site.founded} into three divisions working under one roof —
+              {site.founded} into two divisions working under one roof —
               from raw block to finished, installed surface.
             </p>
           </div>
@@ -82,10 +99,10 @@ export default function AboutPage() {
       <section className="container-px mx-auto max-w-8xl pb-20 sm:pb-24">
         <Reveal>
           <h2 className="font-display text-2xl font-medium tracking-tight sm:text-3xl">
-            Three divisions, one standard
+            Two divisions, one standard
           </h2>
         </Reveal>
-        <StaggerGroup className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-3">
+        <StaggerGroup className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
           {site.divisions.map((division) => (
             <StaggerItem
               key={division.name}
@@ -117,6 +134,48 @@ export default function AboutPage() {
       </section>
 
       <section className="container-px mx-auto max-w-8xl pb-20 sm:pb-24">
+        <div className="grid gap-12 lg:grid-cols-2">
+          <Reveal>
+            <h2 className="font-display text-2xl font-medium tracking-tight sm:text-3xl">
+              Our Services
+            </h2>
+            <p className="mt-4 max-w-xl text-base leading-relaxed text-fg-muted">
+              {site.name} provides the following main services:
+            </p>
+            <ul className="mt-6 flex flex-col gap-3">
+              {services.map((service) => (
+                <li key={service} className="flex items-start gap-2.5 text-sm text-fg-muted">
+                  <Check className="mt-0.5 h-4 w-4 shrink-0 text-navy-dynamic" strokeWidth={1.75} />
+                  <span>{service}</span>
+                </li>
+              ))}
+            </ul>
+          </Reveal>
+
+          <Reveal delay={0.1}>
+            <h2 className="font-display text-2xl font-medium tracking-tight sm:text-3xl">
+              Our Capabilities
+            </h2>
+            <p className="mt-4 max-w-xl text-base leading-relaxed text-fg-muted">
+              With advanced manufacturing capabilities and a highly skilled
+              team, we provide premium marble and stone solutions that meet
+              the highest standards of quality, precision, and reliability.
+            </p>
+            <div className="mt-6 grid grid-cols-2 gap-3">
+              {capabilities.map((capability) => (
+                <div
+                  key={capability}
+                  className="rounded-xl border border-hairline bg-canvas-alt px-4 py-3 text-sm font-medium text-fg"
+                >
+                  {capability}
+                </div>
+              ))}
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      <section className="container-px mx-auto max-w-8xl pb-20 sm:pb-24">
         <StaggerGroup className="grid grid-cols-1 gap-6 sm:grid-cols-2">
           <StaggerItem className="rounded-2xl border border-hairline bg-canvas-alt p-8">
             <h3 className="font-display text-lg font-medium text-fg">
@@ -138,6 +197,24 @@ export default function AboutPage() {
             </p>
           </StaggerItem>
         </StaggerGroup>
+      </section>
+
+      <section className="container-px mx-auto max-w-8xl pb-20 sm:pb-24">
+        <Reveal>
+          <div className="rounded-2xl border border-hairline bg-canvas-alt p-8 sm:p-10">
+            <h2 className="font-display text-2xl font-medium tracking-tight sm:text-3xl">
+              Quality Assurance
+            </h2>
+            <p className="mt-4 max-w-2xl text-base leading-relaxed text-fg-muted">
+              Quality and safety are our top priorities at {site.name}. We are
+              constantly striving to innovate and improve our services to
+              ensure they meet regulatory standards and deliver the highest
+              quality. Our team undergoes continuous training, and our
+              products and procedures are regularly monitored to guarantee
+              compliance with both internal and international standards.
+            </p>
+          </div>
+        </Reveal>
       </section>
 
       <section className="container-px mx-auto max-w-8xl pb-24 sm:pb-32">
