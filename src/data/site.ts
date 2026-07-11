@@ -15,7 +15,7 @@ export const site = {
     address: "63/52 Sheikh Ammar Bin Humaid Street, Jurf Industrial 1, Ajman, United Arab Emirates",
     mapsUrl: "https://www.google.com/maps/search/?api=1&query=Jabal+Al+Sheikh+Marble+Sheikh+Ammar+Bin+Humaid+Street+Jurf+Industrial+1+Ajman+UAE",
     mapsEmbedUrl: "https://www.google.com/maps?q=Jabal+Al+Sheikh+Marble,+Sheikh+Ammar+Bin+Humaid+Street,+Jurf+Industrial+1,+Ajman,+UAE&output=embed",
-    hours: "Sat–Thu: 9:00 AM – 6:00 PM · Friday: By appointment",
+    hours: "Sat–Thu: 8:00 AM – 1:00 PM, 3:00 PM – 8:00 PM · Friday: By appointment",
   },
   social: {
     instagram: "https://www.instagram.com/jabalalsheikhmarble",
@@ -34,12 +34,12 @@ export const site = {
     },
   ],
   clients: [
-    { name: "Nesto", logo: "/images/clients/nesto.jpg" },
-    { name: "QHC Architects & Engineers", logo: "/images/clients/qhc-architects.jpg" },
-    { name: "Ali & Sons Contracting", logo: "/images/clients/ali-and-sons.jpg" },
-    { name: "Durar Group", logo: "/images/clients/durar-group.jpg" },
-    { name: "Government of Sharjah — Department of Public Works", logo: "/images/clients/sharjah-public-works.jpg" },
-    { name: "Government of Sharjah — Town Planning & Survey", logo: "/images/clients/sharjah-planning.jpg" },
+    { name: "Nesto", logo: "/images/clients/nesto.png" },
+    { name: "QHC Architects & Engineers", logo: "/images/clients/qhc-architects.png" },
+    { name: "Ali & Sons Contracting", logo: "/images/clients/ali-and-sons.png" },
+    { name: "Durar Group", logo: "/images/clients/durar-group.png" },
+    { name: "Government of Sharjah — Department of Public Works", logo: "/images/clients/sharjah-public-works.png" },
+    { name: "Government of Sharjah — Town Planning & Survey", logo: "/images/clients/sharjah-planning.png" },
   ],
 };
 
