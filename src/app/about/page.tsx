@@ -51,6 +51,36 @@ export default function AboutPage() {
 
       <section className="container-px mx-auto max-w-8xl pb-20 sm:pb-24">
         <Reveal>
+          <div className="rounded-2xl border border-hairline bg-canvas-alt p-8 sm:p-10">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-fg-muted">
+              A Message from Our Managing Director
+            </p>
+            <blockquote className="mt-4 max-w-3xl text-base leading-relaxed text-fg-muted sm:text-lg">
+              &ldquo;Growth, innovation, and quality are what we strive to
+              deliver to every customer. Providing the highest-quality
+              products at competitive rates, backed by excellent,
+              customer-centric service, is what I always aim to deliver. It
+              is vital for us to consolidate our position as the preferred
+              supplier for our current and potential clients. We have a
+              significant edge over our competition thanks to our
+              team&apos;s hard work, innovative approach, and excellent
+              service. I am proud of our team and our valuable suppliers,
+              and the commitment they have shown in helping us reach our
+              goals. Along with my team, I look forward to maintaining
+              long-term relationships with all our clients.&rdquo;
+            </blockquote>
+            <p className="mt-6 text-sm font-medium text-fg">
+              {site.founder}
+            </p>
+            <p className="text-sm text-fg-muted">
+              Founder &amp; Managing Director
+            </p>
+          </div>
+        </Reveal>
+      </section>
+
+      <section className="container-px mx-auto max-w-8xl pb-20 sm:pb-24">
+        <Reveal>
           <h2 className="font-display text-2xl font-medium tracking-tight sm:text-3xl">
             Three divisions, one standard
           </h2>
@@ -69,6 +99,44 @@ export default function AboutPage() {
               </p>
             </StaggerItem>
           ))}
+        </StaggerGroup>
+      </section>
+
+      <section className="container-px mx-auto max-w-8xl pb-20 sm:pb-24">
+        <Reveal>
+          <h2 className="font-display text-2xl font-medium tracking-tight sm:text-3xl">
+            Our Approach
+          </h2>
+          <p className="mt-4 max-w-2xl text-base leading-relaxed text-fg-muted">
+            We have the best resources to fulfill the demands of every
+            division we operate in. Our strategic approach and valuable
+            resources make us uniquely positioned to deliver products in
+            their best possible form, at a competitive price.
+          </p>
+        </Reveal>
+      </section>
+
+      <section className="container-px mx-auto max-w-8xl pb-20 sm:pb-24">
+        <StaggerGroup className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+          <StaggerItem className="rounded-2xl border border-hairline bg-canvas-alt p-8">
+            <h3 className="font-display text-lg font-medium text-fg">
+              Our Goal
+            </h3>
+            <p className="mt-3 text-sm leading-relaxed text-fg-muted">
+              Our goal is to become one of the preferred choices for our
+              customers, while maintaining the quality of both our products
+              and services.
+            </p>
+          </StaggerItem>
+          <StaggerItem className="rounded-2xl border border-hairline bg-canvas-alt p-8">
+            <h3 className="font-display text-lg font-medium text-fg">
+              Our Mission
+            </h3>
+            <p className="mt-3 text-sm leading-relaxed text-fg-muted">
+              Our mission is to deliver the most customer-centric service
+              while providing high-quality, reliable products, every time.
+            </p>
+          </StaggerItem>
         </StaggerGroup>
       </section>
 
