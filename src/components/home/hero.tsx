@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import Image from "next/image";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 
 const slides = [
@@ -16,7 +16,8 @@ const slides = [
   "/images/hero/slideshow/hero-slab-08.jpg",
 ];
 
-const SLIDE_DURATION = 5000;
+const SLIDE_DURATION = 6000;
+const FADE_DURATION = 2200;
 
 export function Hero() {
   const [index, setIndex] = React.useState(0);
@@ -30,25 +31,31 @@ export function Hero() {
 
   return (
     <section className="relative flex h-[92vh] min-h-[640px] w-full items-end overflow-hidden">
-      <AnimatePresence initial={false}>
-        <motion.div
-          key={slides[index]}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-          className="absolute inset-0"
-        >
-          <Image
-            src={slides[index]}
-            alt="Natural stone slab with dramatic veining, studio lit"
-            fill
-            priority={index === 0}
-            className="object-cover"
-            sizes="100vw"
-          />
-        </motion.div>
-      </AnimatePresence>
+      {/* All slides stay mounted and simply cross-fade opacity — avoids any
+          remount/reload flash and lets the browser compositor handle the
+          transition, which is what makes the fade feel smooth. */}
+      <div className="absolute inset-0">
+        {slides.map((src, i) => (
+          <div
+            key={src}
+            className="absolute inset-0 transition-opacity ease-in-out"
+            style={{
+              opacity: i === index ? 1 : 0,
+              transitionDuration: `${FADE_DURATION}ms`,
+            }}
+          >
+            <Image
+              src={src}
+              alt="Natural stone slab with dramatic veining, studio lit"
+              fill
+              priority={i === 0}
+              loading={i === 0 ? undefined : "eager"}
+              className="object-cover"
+              sizes="100vw"
+            />
+          </div>
+        ))}
+      </div>
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-black/10" />
 
       <div className="container-px relative mx-auto w-full max-w-8xl pb-20 pt-40 sm:pb-28">
