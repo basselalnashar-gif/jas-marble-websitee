@@ -37,6 +37,7 @@ const config: Config = {
       fontFamily: {
         display: ["var(--font-display)"],
         sans: ["var(--font-sans)"],
+        brand: ["var(--font-brand)"],
       },
       letterSpacing: {
         tightest: "-0.04em",
