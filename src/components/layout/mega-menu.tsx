@@ -13,12 +13,14 @@ export function MegaMenu({
   items,
   activePanel,
   setActivePanel,
+  triggerClassName,
 }: {
   label: string;
   href: string;
   items: NavLink[];
   activePanel: string | null;
   setActivePanel: (v: string | null) => void;
+  triggerClassName?: string;
 }) {
   const isOpen = activePanel === label;
 
@@ -30,7 +32,10 @@ export function MegaMenu({
     >
       <Link
         href={href}
-        className="flex items-center gap-1 py-2 text-sm font-medium text-fg-muted transition-colors duration-200 hover:text-fg"
+        className={cn(
+          "flex items-center gap-1 py-2 text-sm font-medium text-fg-muted transition-colors duration-200 hover:text-fg",
+          triggerClassName
+        )}
         onFocus={() => setActivePanel(label)}
       >
         {label}

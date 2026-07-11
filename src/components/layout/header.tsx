@@ -2,7 +2,6 @@
 
 import * as React from "react";
 import Link from "next/link";
-import { cn } from "@/lib/utils";
 import { Logo } from "@/components/layout/logo";
 import { MegaMenu } from "@/components/layout/mega-menu";
 import { MobileNav } from "@/components/layout/mobile-nav";
@@ -10,47 +9,19 @@ import { ThemeToggle } from "@/components/theme/theme-toggle";
 import { Button } from "@/components/ui/button";
 import { applicationsNav, materialsNav } from "@/data/site";
 
+const navLinkClass =
+  "text-sm font-medium text-white/75 transition-colors duration-200 hover:text-white";
+
 export function Header() {
-  const [scrolled, setScrolled] = React.useState(false);
   const [activePanel, setActivePanel] = React.useState<string | null>(null);
 
-  React.useEffect(() => {
-    // Throttle via rAF instead of setting state on every scroll event —
-    // firing setState (and re-rendering a fixed, backdrop-blurred header)
-    // on every raw scroll tick is what causes the tap-to-open lag on mobile.
-    let ticking = false;
-    const update = () => {
-      setScrolled(window.scrollY > 12);
-      ticking = false;
-    };
-    const onScroll = () => {
-      if (!ticking) {
-        ticking = true;
-        window.requestAnimationFrame(update);
-      }
-    };
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
   return (
-    <header
-      className={cn(
-        "fixed inset-x-0 top-0 z-50 transition-colors duration-300",
-        scrolled
-          ? "bg-surface/95 border-b border-hairline sm:bg-surface/80 sm:backdrop-blur-md"
-          : "bg-transparent border-b border-transparent"
-      )}
-    >
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-black/10 bg-navy-800">
       <div className="container-px mx-auto flex h-20 max-w-8xl items-center justify-between">
-        <Logo />
+        <Logo theme="onDark" />
 
         <nav className="hidden items-center gap-8 lg:flex">
-          <Link
-            href="/"
-            className="text-sm font-medium text-fg-muted transition-colors duration-200 hover:text-fg"
-          >
+          <Link href="/" className={navLinkClass}>
             Home
           </Link>
           <MegaMenu
@@ -59,6 +30,7 @@ export function Header() {
             items={materialsNav}
             activePanel={activePanel}
             setActivePanel={setActivePanel}
+            triggerClassName={navLinkClass}
           />
           <MegaMenu
             label="Applications"
@@ -66,37 +38,29 @@ export function Header() {
             items={applicationsNav}
             activePanel={activePanel}
             setActivePanel={setActivePanel}
+            triggerClassName={navLinkClass}
           />
-          <Link
-            href="/projects"
-            className="text-sm font-medium text-fg-muted transition-colors duration-200 hover:text-fg"
-          >
+          <Link href="/projects" className={navLinkClass}>
             Projects
           </Link>
-          <Link
-            href="/trade-program"
-            className="text-sm font-medium text-fg-muted transition-colors duration-200 hover:text-fg"
-          >
+          <Link href="/trade-program" className={navLinkClass}>
             Trade Program
           </Link>
-          <Link
-            href="/about"
-            className="text-sm font-medium text-fg-muted transition-colors duration-200 hover:text-fg"
-          >
+          <Link href="/about" className={navLinkClass}>
             About
           </Link>
         </nav>
 
         <div className="hidden items-center gap-3 lg:flex">
-          <ThemeToggle />
-          <Button href="/contact" size="md">
+          <ThemeToggle className="border-white/25 text-white/80 hover:border-white/50 hover:text-white" />
+          <Button href="/contact" size="md" variant="secondary">
             Request a Quote
           </Button>
         </div>
 
         <div className="flex items-center gap-2 lg:hidden">
-          <ThemeToggle />
-          <MobileNav />
+          <ThemeToggle className="border-white/25 text-white/80 hover:border-white/50 hover:text-white" />
+          <MobileNav triggerClassName="text-white" />
         </div>
       </div>
     </header>

@@ -47,10 +47,15 @@ export function Footer() {
         </div>
 
         <div className="mt-12 grid gap-3 border-t border-hairline pt-10 text-sm text-fg-muted sm:grid-cols-2 lg:grid-cols-4">
-          <div className="flex items-start gap-3">
+          <a
+            href={site.contact.mapsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-start gap-3 hover:text-fg"
+          >
             <MapPin className="mt-0.5 h-4 w-4 shrink-0" strokeWidth={1.5} />
             <span>{site.contact.address}</span>
-          </div>
+          </a>
           <a href={`tel:${site.contact.phone.replace(/[^+\d]/g, "")}`} className="flex items-center gap-3 hover:text-fg">
             <Phone className="h-4 w-4 shrink-0" strokeWidth={1.5} />
             <span>{site.contact.phone}</span>
