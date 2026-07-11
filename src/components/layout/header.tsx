@@ -15,7 +15,20 @@ export function Header() {
   const [activePanel, setActivePanel] = React.useState<string | null>(null);
 
   React.useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 12);
+    // Throttle via rAF instead of setting state on every scroll event —
+    // firing setState (and re-rendering a fixed, backdrop-blurred header)
+    // on every raw scroll tick is what causes the tap-to-open lag on mobile.
+    let ticking = false;
+    const update = () => {
+      setScrolled(window.scrollY > 12);
+      ticking = false;
+    };
+    const onScroll = () => {
+      if (!ticking) {
+        ticking = true;
+        window.requestAnimationFrame(update);
+      }
+    };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
@@ -24,9 +37,9 @@ export function Header() {
   return (
     <header
       className={cn(
-        "fixed inset-x-0 top-0 z-50 transition-all duration-300",
+        "fixed inset-x-0 top-0 z-50 transition-colors duration-300",
         scrolled
-          ? "bg-surface/80 backdrop-blur-md border-b border-hairline"
+          ? "bg-surface/95 border-b border-hairline sm:bg-surface/80 sm:backdrop-blur-md"
           : "bg-transparent border-b border-transparent"
       )}
     >

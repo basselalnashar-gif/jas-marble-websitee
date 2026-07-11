@@ -80,7 +80,7 @@ export function MobileNav() {
         type="button"
         onClick={() => setOpen(true)}
         aria-label="Open menu"
-        className="flex h-10 w-10 items-center justify-center text-fg"
+        className="flex h-10 w-10 touch-manipulation items-center justify-center text-fg"
       >
         <Menu className="h-6 w-6" strokeWidth={1.5} />
       </button>
