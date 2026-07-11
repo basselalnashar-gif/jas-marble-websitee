@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
+import { FloatingSocial } from "@/components/layout/floating-social";
 import { site } from "@/data/site";
 
 const displayFont = Playfair_Display({
@@ -99,6 +100,7 @@ export default function RootLayout({
           <Header />
           <main>{children}</main>
           <Footer />
+          <FloatingSocial />
         </ThemeProvider>
       </body>
     </html>
