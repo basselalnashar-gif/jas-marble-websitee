@@ -32,7 +32,6 @@ export function QuoteForm() {
       projectType: formData.get("projectType"),
       materialInterest: formData.get("materialInterest"),
       projectStage: formData.get("projectStage"),
-      budgetRange: formData.get("budgetRange"),
       message: formData.get("message"),
       fileName,
     };
@@ -57,7 +56,6 @@ export function QuoteForm() {
         `Project type: ${payload.projectType}`,
         payload.materialInterest ? `Material interest: ${payload.materialInterest}` : null,
         payload.projectStage ? `Project stage: ${payload.projectStage}` : null,
-        payload.budgetRange ? `Budget range: ${payload.budgetRange}` : null,
         payload.message ? `Message: ${payload.message}` : null,
       ]
         .filter(Boolean)
@@ -136,24 +134,13 @@ export function QuoteForm() {
         </Field>
       </div>
 
-      <div className="grid gap-6 sm:grid-cols-2">
-        <Field label="Project stage" htmlFor="projectStage">
-          <Select id="projectStage" name="projectStage" defaultValue="">
-            <option value="">Select one</option>
-            <option value="planning">Still planning</option>
-            <option value="ready">Ready to install</option>
-          </Select>
-        </Field>
-        <Field label="Budget range (optional)" htmlFor="budgetRange">
-          <Select id="budgetRange" name="budgetRange" defaultValue="">
-            <option value="">Prefer not to say</option>
-            <option value="under-5k">Under $5,000</option>
-            <option value="5k-15k">$5,000 – $15,000</option>
-            <option value="15k-50k">$15,000 – $50,000</option>
-            <option value="50k-plus">$50,000+</option>
-          </Select>
-        </Field>
-      </div>
+      <Field label="Project stage" htmlFor="projectStage">
+        <Select id="projectStage" name="projectStage" defaultValue="">
+          <option value="">Select one</option>
+          <option value="planning">Still planning</option>
+          <option value="ready">Ready to install</option>
+        </Select>
+      </Field>
 
       <Field label="Floor plans or inspiration images" htmlFor="file">
         <label
