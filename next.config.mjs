@@ -4,6 +4,15 @@ const nextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
   },
+  async redirects() {
+    return [
+      {
+        source: "/applications/kitchen-countertops",
+        destination: "/applications/vanity-counters",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
