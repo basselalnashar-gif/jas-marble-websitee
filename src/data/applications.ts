@@ -6,28 +6,33 @@ import type { Application } from "@/types";
  */
 export const applications: Application[] = [
   {
-    slug: "kitchen-countertops",
-    name: "Kitchen Countertops",
-    tagline: "The centerpiece of the home",
+    slug: "vanity-counters",
+    name: "Vanity Counters",
+    tagline: "The centerpiece of the bathroom",
     description:
-      "The kitchen countertop sees more daily use than almost any other surface in the home — it needs to withstand heat, knives, and spills while still being the first thing guests notice. We template, fabricate, and install countertops in marble, granite, quartz, and sintered stone to match both your kitchen's style and how you actually use it.",
+      "The vanity counter is where fine finishes matter most — a surface seen up close, every day, that needs to resist water, cosmetics, and daily wear while still looking flawless. We template, fabricate, and install vanity counters in marble, granite, quartz, and sintered stone, with integrated sinks and edge profiles to match your bathroom's style.",
     images: [
-      { src: "/images/applications/kitchen-countertops/kc-01.jpg", alt: "Dark marble double-sink vanity countertop" },
-      { src: "/images/applications/kitchen-countertops/kc-02.jpg", alt: "Double vanity with dark stone countertop" },
+      { src: "/images/applications/vanity-counters/vc-01.jpg", alt: "Greywood double vanity with backlit mirrors and floating stone counter" },
+      { src: "/images/applications/vanity-counters/vc-02.jpg", alt: "Double vanity with gold-framed mirrors, gold fixtures, and dark wood cabinetry" },
+      { src: "/images/applications/vanity-counters/vc-03.jpg", alt: "Tundra Grey marble vanity with carved sink and glass shower behind" },
+      { src: "/images/applications/vanity-counters/vc-04.jpg", alt: "Light beige travertine and sintered stone vanity with undermount sink" },
+      { src: "/images/applications/vanity-counters/vc-05.jpg", alt: "Travertine double vanity with angled trough sinks and mixed black and copper faucets" },
+      { src: "/images/applications/vanity-counters/vc-06.jpg", alt: "Dramatic beige and grey marble powder room with cylindrical pedestal sink" },
+      { src: "/images/applications/vanity-counters/vc-07.jpg", alt: "Vanity counter stand cut from dramatic Calacatta Viola marble" },
     ],
     options: [
       "Eased, bullnose, waterfall, and mitered edge profiles",
       "Honed, polished, or leathered finishes",
-      "Integrated sinks and drainboards",
-      "Full-height backsplashes and waterfall islands",
+      "Integrated sinks, basins, and backsplashes",
+      "Single and double-vanity configurations",
     ],
     process: [
-      { title: "Consultation", description: "We discuss your layout, usage, and material preferences." },
+      { title: "Consultation", description: "We discuss your layout, sink style, and material preferences." },
       { title: "Template & measure", description: "Precise on-site digital templating once cabinetry is set." },
       { title: "Fabrication", description: "Slabs are cut, edged, and finished in our workshop." },
       { title: "Install", description: "Careful delivery and installation, typically completed in a day." },
     ],
-    recommendedMaterialSlugs: ["granite", "quartz", "sintered-stone"],
+    recommendedMaterialSlugs: ["marble", "granite", "quartz", "sintered-stone"],
   },
   {
     slug: "flooring",

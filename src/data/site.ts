@@ -60,7 +60,7 @@ export const materialsNav: NavLink[] = [
 ];
 
 export const applicationsNav: NavLink[] = [
-  { label: "Kitchen Countertops", href: "/applications/kitchen-countertops", description: "The centerpiece of the home" },
+  { label: "Vanity Counters", href: "/applications/vanity-counters", description: "The centerpiece of the bathroom" },
   { label: "Flooring", href: "/applications/flooring", description: "Seamless, elegant, built to last" },
   { label: "Wall Cladding", href: "/applications/wall-cladding", description: "Statement surfaces, interior and exterior" },
   { label: "Staircase", href: "/applications/staircase", description: "A first impression, carved in stone" },

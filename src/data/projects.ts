@@ -12,7 +12,7 @@ export const projects: Project[] = [
     location: "Dubai, UAE",
     category: "Residential",
     materialSlugs: ["marble", "granite", "quartz"],
-    applicationSlugs: ["kitchen-countertops", "wall-cladding", "luxury-interior-projects"],
+    applicationSlugs: ["vanity-counters", "wall-cladding", "luxury-interior-projects"],
     summary:
       "Natural stone supply for Pagani Tower, an ultra-luxury residential tower developed by DarGlobal in collaboration with Pagani Automobili.",
     scope: "Stone supply for interior surfaces across the tower.",
