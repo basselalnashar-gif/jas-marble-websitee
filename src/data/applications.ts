@@ -135,6 +135,27 @@ export const applications: Application[] = [
     ],
     recommendedMaterialSlugs: ["marble", "travertine", "granite"],
   },
+  {
+    slug: "furniture",
+    name: "Furniture",
+    tagline: "Sculptural pieces, built to be the centerpiece",
+    description:
+      "Stone furniture turns a functional piece into a statement — a dining table with dramatic book-matched veining, a floating vanity, or a sculptural side table cut from a single slab. We fabricate custom furniture and fixtures in marble, granite, quartz, and onyx, working from your design or ours, with the same precision we bring to full architectural installations.",
+    images: [],
+    options: [
+      "Dining, coffee, and side tables cut from a single slab",
+      "Book-matched and waterfall-edge designs",
+      "Custom vanities, consoles, and reception desks",
+      "Backlit onyx pieces for a dramatic glow effect",
+    ],
+    process: [
+      { title: "Consultation", description: "We discuss the piece, dimensions, and material character you're after." },
+      { title: "Slab selection", description: "You choose the exact slab — every piece of natural stone is unique." },
+      { title: "Fabrication", description: "Cut, edged, and finished in our workshop to a furniture-grade polish." },
+      { title: "Delivery", description: "Careful packaging and delivery, with placement assistance on request." },
+    ],
+    recommendedMaterialSlugs: ["marble", "granite", "quartz", "onyx"],
+  },
 ];
 
 export function getApplicationBySlug(slug: string) {

@@ -64,6 +64,7 @@ export const applicationsNav: NavLink[] = [
   { label: "Flooring", href: "/applications/flooring", description: "Seamless, elegant, built to last" },
   { label: "Wall Cladding", href: "/applications/wall-cladding", description: "Statement surfaces, interior and exterior" },
   { label: "Staircase", href: "/applications/staircase", description: "A first impression, carved in stone" },
+  { label: "Furniture", href: "/applications/furniture", description: "Sculptural pieces, built to be the centerpiece" },
   { label: "Luxury Interior Projects", href: "/applications/luxury-interior-projects", description: "Full-scale bespoke transformations" },
 ];
 
