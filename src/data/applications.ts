@@ -67,6 +67,13 @@ export const applications: Application[] = [
       { src: "/images/applications/wall-cladding/wc-01.jpg", alt: "Book-matched dark stone cladding installation" },
       { src: "/images/applications/wall-cladding/wc-02.jpg", alt: "Marble wall cladding in a bathroom" },
       { src: "/images/applications/wall-cladding/wc-03.jpg", alt: "Bookmatched marble slab, floor to ceiling" },
+      { src: "/images/applications/wall-cladding/wc-04.jpg", alt: "Volakas marble bookmatched wall cladding with dramatic veining" },
+      { src: "/images/applications/wall-cladding/wc-05.jpg", alt: "Grigio Orobico bookmatched marble feature wall beside timber battens" },
+      { src: "/images/applications/wall-cladding/wc-06.jpg", alt: "Fluted travertine wall cladding beside a matching stone staircase" },
+      { src: "/images/applications/wall-cladding/wc-07.jpg", alt: "Bookmatched marble cladding rising two storeys beside glazing and a chandelier" },
+      { src: "/images/applications/wall-cladding/wc-08.jpg", alt: "Backlit agate stone wall cladding beside a copper-framed elevator" },
+      { src: "/images/applications/wall-cladding/wc-09.jpg", alt: "Bookmatched marble cladding surrounding an elevator and staircase" },
+      { src: "/images/applications/wall-cladding/wc-10.jpg", alt: "Fluted travertine cladding on an exterior facade and columns" },
     ],
     options: [
       "Book-matched slab pairs for symmetrical veining",
