@@ -131,6 +131,8 @@ export const applications: Application[] = [
       { src: "/images/applications/staircase/st-10.jpg", alt: "Travertine staircase with wood-trimmed glass balustrade" },
       { src: "/images/applications/staircase/st-11.jpg", alt: "Grey marble staircase with black metal railing beside an olive tree" },
       { src: "/images/applications/staircase/st-12.jpg", alt: "Travertine staircase with recessed step lighting" },
+      { src: "/images/applications/staircase/st-13.jpg", alt: "Travertine staircase with glass balustrade, seen from below against a fluted wall" },
+      { src: "/images/applications/staircase/st-14.jpg", alt: "Travertine staircase with glass balustrade beside a fluted wall and floor-to-ceiling windows" },
     ],
     options: [
       "Book-matched and curved riser fabrication",
