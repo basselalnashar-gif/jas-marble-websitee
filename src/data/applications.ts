@@ -64,7 +64,6 @@ export const applications: Application[] = [
     description:
       "A stone-clad wall turns a lobby, feature wall, or facade into a signature moment. We fabricate cladding in large-format slabs or panels, book-matched where the material allows, for a continuous and dramatic effect.",
     images: [
-      { src: "/images/applications/wall-cladding/wc-01.jpg", alt: "Book-matched dark stone cladding installation" },
       { src: "/images/applications/wall-cladding/wc-02.jpg", alt: "Marble wall cladding in a bathroom" },
       { src: "/images/applications/wall-cladding/wc-03.jpg", alt: "Bookmatched marble slab, floor to ceiling" },
       { src: "/images/applications/wall-cladding/wc-04.jpg", alt: "Volakas marble bookmatched wall cladding with dramatic veining" },
