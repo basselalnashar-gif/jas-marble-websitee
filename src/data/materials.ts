@@ -93,6 +93,21 @@ export const materials: Material[] = [
     images: [
       { src: "/images/materials/quartz/quartz-01.jpg", alt: "Custom quartz-topped table, fabricated in-house" },
     ],
+    varieties: [
+      { name: "Ash Grey", image: { src: "/images/materials/quartz/varieties/ash-grey.jpg", alt: "Ash Grey quartz slab" } },
+      { name: "Black Vanilla", image: { src: "/images/materials/quartz/varieties/black-vanilla.jpg", alt: "Black Vanilla quartz slab" } },
+      { name: "Calacatta Arte", image: { src: "/images/materials/quartz/varieties/calacatta-arte.jpg", alt: "Calacatta Arte quartz slab" } },
+      { name: "Calacatta Marquina", image: { src: "/images/materials/quartz/varieties/calacatta-marquina.jpg", alt: "Calacatta Marquina quartz slab" } },
+      { name: "Calacatta Tres", image: { src: "/images/materials/quartz/varieties/calacatta-tres.jpg", alt: "Calacatta Tres quartz slab" } },
+      { name: "Calacatta Venas", image: { src: "/images/materials/quartz/varieties/calacatta-venas.jpg", alt: "Calacatta Venas quartz slab" } },
+      { name: "Carrara White", image: { src: "/images/materials/quartz/varieties/carrara-white.jpg", alt: "Carrara White quartz slab" } },
+      { name: "Exotica", image: { src: "/images/materials/quartz/varieties/exotica.jpg", alt: "Exotica quartz slab" } },
+      { name: "Imperio Black", image: { src: "/images/materials/quartz/varieties/imperio-black.jpg", alt: "Imperio Black quartz slab" } },
+      { name: "Maldives Sand", image: { src: "/images/materials/quartz/varieties/maldives-sand.jpg", alt: "Maldives Sand quartz slab" } },
+      { name: "Oreo Symphony", image: { src: "/images/materials/quartz/varieties/oreo-symphony.jpg", alt: "Oreo Symphony quartz slab" } },
+      { name: "Pietro Grey", image: { src: "/images/materials/quartz/varieties/pietro-grey.jpg", alt: "Pietro Grey quartz slab" } },
+      { name: "Sparkling White", image: { src: "/images/materials/quartz/varieties/sparkling-white.jpg", alt: "Sparkling White quartz slab" } },
+    ],
     specs: [
       { label: "Durability", value: "Excellent — resists scratching and staining" },
       { label: "Porosity", value: "Non-porous — no sealing required" },
