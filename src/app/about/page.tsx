@@ -39,28 +39,22 @@ export default function AboutPage() {
 
       <section className="container-px mx-auto max-w-8xl pb-20 sm:pb-24">
         <Reveal>
-          <div className="flex flex-col items-center gap-6 rounded-2xl border border-hairline bg-stone-150 px-8 py-16 text-center dark:bg-white/5">
+          <div className="flex flex-col items-center gap-6 rounded-2xl border border-hairline bg-navy-900 px-8 py-16 text-center">
             <span className="relative block h-16 w-16">
-              <Image
-                src="/images/logo/logo-mark-navy.png"
-                alt=""
-                fill
-                className="object-contain dark:hidden"
-              />
               <Image
                 src="/images/logo/logo-mark-white.png"
                 alt=""
                 fill
-                className="hidden object-contain dark:block"
+                className="object-contain"
               />
             </span>
-            <p className="font-display text-3xl text-navy-dynamic" dir="rtl" lang="ar">
+            <p className="font-display text-3xl text-white" dir="rtl" lang="ar">
               {site.nameArabic}
             </p>
-            <p className="font-brand text-lg font-bold tracking-tight text-navy-dynamic">
+            <p className="font-brand text-lg font-bold tracking-tight text-white">
               {site.name}
             </p>
-            <p className="max-w-md text-sm text-fg-muted">
+            <p className="max-w-md text-sm text-white/70">
               Headquartered in Ajman, UAE, {site.name} has grown since{" "}
               {site.founded} into two divisions working under one roof —
               from raw block to finished, installed surface.
@@ -71,11 +65,11 @@ export default function AboutPage() {
 
       <section className="container-px mx-auto max-w-8xl pb-20 sm:pb-24">
         <Reveal>
-          <div className="rounded-2xl border border-hairline bg-stone-150 p-8 sm:p-10 dark:bg-white/5">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-fg-muted">
+          <div className="rounded-2xl border border-hairline bg-navy-900 p-8 sm:p-10">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/60">
               A Message from Our Managing Director
             </p>
-            <blockquote className="mt-4 max-w-3xl text-base leading-relaxed text-fg-muted sm:text-lg">
+            <blockquote className="mt-4 max-w-3xl text-base leading-relaxed text-white/85 sm:text-lg">
               &ldquo;Growth, innovation, and quality are what we strive to
               deliver to every customer. Providing the highest-quality
               products at competitive rates, backed by excellent,
@@ -89,7 +83,7 @@ export default function AboutPage() {
               goals. Along with my team, I look forward to maintaining
               long-term relationships with all our clients.&rdquo;
             </blockquote>
-            <p className="mt-6 text-sm font-medium text-fg">
+            <p className="mt-6 text-sm font-medium text-white">
               Founder &amp; Managing Director
             </p>
           </div>
@@ -106,12 +100,12 @@ export default function AboutPage() {
           {site.divisions.map((division) => (
             <StaggerItem
               key={division.name}
-              className="rounded-2xl border border-hairline bg-stone-150 p-8 dark:bg-white/5"
+              className="rounded-2xl border border-hairline bg-navy-900 p-8"
             >
-              <h3 className="font-display text-lg font-medium text-fg">
+              <h3 className="font-display text-lg font-medium text-white">
                 {division.name}
               </h3>
-              <p className="mt-3 text-sm leading-relaxed text-fg-muted">
+              <p className="mt-3 text-sm leading-relaxed text-white/70">
                 {division.description}
               </p>
             </StaggerItem>
@@ -165,7 +159,7 @@ export default function AboutPage() {
               {capabilities.map((capability) => (
                 <div
                   key={capability}
-                  className="rounded-xl border border-hairline bg-stone-150 px-4 py-3 text-sm font-medium text-fg dark:bg-white/5"
+                  className="rounded-xl border border-hairline bg-navy-900 px-4 py-3 text-sm font-medium text-white"
                 >
                   {capability}
                 </div>
@@ -177,21 +171,21 @@ export default function AboutPage() {
 
       <section className="container-px mx-auto max-w-8xl pb-20 sm:pb-24">
         <StaggerGroup className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-          <StaggerItem className="rounded-2xl border border-hairline bg-stone-150 p-8 dark:bg-white/5">
-            <h3 className="font-display text-lg font-medium text-fg">
+          <StaggerItem className="rounded-2xl border border-hairline bg-navy-900 p-8">
+            <h3 className="font-display text-lg font-medium text-white">
               Our Goal
             </h3>
-            <p className="mt-3 text-sm leading-relaxed text-fg-muted">
+            <p className="mt-3 text-sm leading-relaxed text-white/70">
               Our goal is to become one of the preferred choices for our
               customers, while maintaining the quality of both our products
               and services.
             </p>
           </StaggerItem>
-          <StaggerItem className="rounded-2xl border border-hairline bg-stone-150 p-8 dark:bg-white/5">
-            <h3 className="font-display text-lg font-medium text-fg">
+          <StaggerItem className="rounded-2xl border border-hairline bg-navy-900 p-8">
+            <h3 className="font-display text-lg font-medium text-white">
               Our Mission
             </h3>
-            <p className="mt-3 text-sm leading-relaxed text-fg-muted">
+            <p className="mt-3 text-sm leading-relaxed text-white/70">
               Our mission is to deliver the most customer-centric service
               while providing high-quality, reliable products, every time.
             </p>
@@ -201,11 +195,11 @@ export default function AboutPage() {
 
       <section className="container-px mx-auto max-w-8xl pb-20 sm:pb-24">
         <Reveal>
-          <div className="rounded-2xl border border-hairline bg-stone-150 p-8 sm:p-10 dark:bg-white/5">
+          <div className="rounded-2xl border border-hairline bg-navy-900 p-8 sm:p-10 text-white">
             <h2 className="font-display text-2xl font-medium tracking-tight sm:text-3xl">
               Quality Assurance
             </h2>
-            <p className="mt-4 max-w-2xl text-base leading-relaxed text-fg-muted">
+            <p className="mt-4 max-w-2xl text-base leading-relaxed text-white/70">
               Quality and safety are our top priorities at {site.name}. We are
               constantly striving to innovate and improve our services to
               ensure they meet regulatory standards and deliver the highest
