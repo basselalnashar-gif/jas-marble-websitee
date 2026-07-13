@@ -7,7 +7,7 @@ import { materials } from "@/data/materials";
 export const metadata: Metadata = {
   title: "Materials",
   description:
-    "Marble, granite, quartz, sintered stone, travertine, onyx, and limestone — explore specifications, finishes, and ideal applications for each material we work with.",
+    "Marble, granite, quartz, sintered stone, travertine, and onyx — explore specifications, finishes, and ideal applications for each material we work with.",
 };
 
 export default function MaterialsPage() {
