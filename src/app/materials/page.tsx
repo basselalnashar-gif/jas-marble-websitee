@@ -15,7 +15,7 @@ export default function MaterialsPage() {
     <>
       <PageIntro
         eyebrow="Materials"
-        title="Seven materials, each with its own character."
+        title="Six materials, each with its own character."
         description="Every project starts with choosing the right material for how a space will be lived in and used. Explore specifications, finishes, and best applications for each."
       />
       <section className="container-px mx-auto max-w-8xl pb-24 sm:pb-32">
