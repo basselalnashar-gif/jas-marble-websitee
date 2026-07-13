@@ -42,6 +42,7 @@ export const applications: Application[] = [
       "Stone flooring brings a scale and continuity that few other materials can match — from grand entryways to full-home installations. We work with architects and contractors to select formats, finishes, and slip ratings appropriate to each space.",
     images: [
       { src: "/images/applications/flooring/fl-01.jpg", alt: "Large-format flooring slab being installed on site" },
+      { src: "/images/applications/flooring/fl-02.jpg", alt: "Diamond-pattern travertine floor in a room with arched stained-glass windows" },
     ],
     options: [
       "Large-format slabs for minimal grout lines",
@@ -73,6 +74,8 @@ export const applications: Application[] = [
       { src: "/images/applications/wall-cladding/wc-08.jpg", alt: "Backlit agate stone wall cladding beside a copper-framed elevator" },
       { src: "/images/applications/wall-cladding/wc-09.jpg", alt: "Bookmatched marble cladding surrounding an elevator and staircase" },
       { src: "/images/applications/wall-cladding/wc-10.jpg", alt: "Fluted travertine cladding on an exterior facade and columns" },
+      { src: "/images/applications/wall-cladding/wc-11.jpg", alt: "Beige bookmatched marble elevator surround with crown molding" },
+      { src: "/images/applications/wall-cladding/wc-12.jpg", alt: "Black bookmatched marble elevator surround with glass elevator doors" },
     ],
     options: [
       "Book-matched slab pairs for symmetrical veining",
@@ -184,6 +187,9 @@ export const applications: Application[] = [
       { src: "/images/applications/furniture/fn-27.jpg", alt: "Beige limestone coffee table with a dark wood trim base" },
       { src: "/images/applications/furniture/fn-28.jpg", alt: "Tall mirrored console table with marble waterfall legs in a foyer" },
       { src: "/images/applications/furniture/fn-29.jpg", alt: "Dark grey book-matched marble bench, detail view" },
+      { src: "/images/applications/furniture/fn-30.jpg", alt: "Backlit onyx dining table with blue LED lighting on a yacht" },
+      { src: "/images/applications/furniture/fn-31.jpg", alt: "Travertine TV wall niche with shelving, mid-construction" },
+      { src: "/images/applications/furniture/fn-32.jpg", alt: "Marble and walnut-paneled TV wall with mirrored side panels" },
     ],
     options: [
       "Dining, coffee, and side tables cut from a single slab",
