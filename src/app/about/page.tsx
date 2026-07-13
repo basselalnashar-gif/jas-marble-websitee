@@ -39,7 +39,7 @@ export default function AboutPage() {
 
       <section className="container-px mx-auto max-w-8xl pb-20 sm:pb-24">
         <Reveal>
-          <div className="flex flex-col items-center gap-6 rounded-2xl border border-hairline bg-canvas-alt px-8 py-16 text-center">
+          <div className="flex flex-col items-center gap-6 rounded-2xl border border-hairline bg-stone-150 px-8 py-16 text-center dark:bg-white/5">
             <span className="relative block h-16 w-16">
               <Image
                 src="/images/logo/logo-mark-navy.png"
@@ -54,10 +54,10 @@ export default function AboutPage() {
                 className="hidden object-contain dark:block"
               />
             </span>
-            <p className="font-display text-3xl text-fg" dir="rtl" lang="ar">
+            <p className="font-display text-3xl text-navy-dynamic" dir="rtl" lang="ar">
               {site.nameArabic}
             </p>
-            <p className="font-brand text-lg font-bold tracking-tight text-fg">
+            <p className="font-brand text-lg font-bold tracking-tight text-navy-dynamic">
               {site.name}
             </p>
             <p className="max-w-md text-sm text-fg-muted">
@@ -71,7 +71,7 @@ export default function AboutPage() {
 
       <section className="container-px mx-auto max-w-8xl pb-20 sm:pb-24">
         <Reveal>
-          <div className="rounded-2xl border border-hairline bg-canvas-alt p-8 sm:p-10">
+          <div className="rounded-2xl border border-hairline bg-stone-150 p-8 sm:p-10 dark:bg-white/5">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-fg-muted">
               A Message from Our Managing Director
             </p>
@@ -106,7 +106,7 @@ export default function AboutPage() {
           {site.divisions.map((division) => (
             <StaggerItem
               key={division.name}
-              className="rounded-2xl border border-hairline bg-canvas-alt p-8"
+              className="rounded-2xl border border-hairline bg-stone-150 p-8 dark:bg-white/5"
             >
               <h3 className="font-display text-lg font-medium text-fg">
                 {division.name}
@@ -165,7 +165,7 @@ export default function AboutPage() {
               {capabilities.map((capability) => (
                 <div
                   key={capability}
-                  className="rounded-xl border border-hairline bg-canvas-alt px-4 py-3 text-sm font-medium text-fg"
+                  className="rounded-xl border border-hairline bg-stone-150 px-4 py-3 text-sm font-medium text-fg dark:bg-white/5"
                 >
                   {capability}
                 </div>
@@ -177,7 +177,7 @@ export default function AboutPage() {
 
       <section className="container-px mx-auto max-w-8xl pb-20 sm:pb-24">
         <StaggerGroup className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-          <StaggerItem className="rounded-2xl border border-hairline bg-canvas-alt p-8">
+          <StaggerItem className="rounded-2xl border border-hairline bg-stone-150 p-8 dark:bg-white/5">
             <h3 className="font-display text-lg font-medium text-fg">
               Our Goal
             </h3>
@@ -187,7 +187,7 @@ export default function AboutPage() {
               and services.
             </p>
           </StaggerItem>
-          <StaggerItem className="rounded-2xl border border-hairline bg-canvas-alt p-8">
+          <StaggerItem className="rounded-2xl border border-hairline bg-stone-150 p-8 dark:bg-white/5">
             <h3 className="font-display text-lg font-medium text-fg">
               Our Mission
             </h3>
@@ -201,7 +201,7 @@ export default function AboutPage() {
 
       <section className="container-px mx-auto max-w-8xl pb-20 sm:pb-24">
         <Reveal>
-          <div className="rounded-2xl border border-hairline bg-canvas-alt p-8 sm:p-10">
+          <div className="rounded-2xl border border-hairline bg-stone-150 p-8 sm:p-10 dark:bg-white/5">
             <h2 className="font-display text-2xl font-medium tracking-tight sm:text-3xl">
               Quality Assurance
             </h2>
