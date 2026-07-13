@@ -1,34 +1,10 @@
 import type { Metadata, Viewport } from "next";
-import { Playfair_Display, Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { FloatingSocial } from "@/components/layout/floating-social";
 import { site } from "@/data/site";
-
-const displayFont = Playfair_Display({
-  subsets: ["latin"],
-  variable: "--font-display",
-  weight: ["500", "600"],
-  style: ["normal", "italic"],
-  display: "swap",
-});
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-sans",
-  display: "swap",
-});
-
-// Matches the bold geometric sans used for "Jabal Al-Sheikh Marble" in the
-// brand's own logo/wordmark file — used for the site name next to the logo mark.
-const brandFont = Poppins({
-  subsets: ["latin"],
-  variable: "--font-brand",
-  weight: ["600", "700", "800"],
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
@@ -97,9 +73,7 @@ export default function RootLayout({
 
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${displayFont.variable} ${inter.variable} ${brandFont.variable} font-sans antialiased`}
-      >
+      <body className="font-sans antialiased">
         <script
           type="application/ld+json"
           // eslint-disable-next-line react/no-danger
