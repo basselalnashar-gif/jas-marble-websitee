@@ -91,6 +91,7 @@ export const materials: Material[] = [
     description:
       "Quartz surfaces are engineered from natural quartz crystals bound with resin, giving architects and homeowners a non-porous, highly consistent surface available in a wide range of colors and patterns — ideal where uniformity and low maintenance matter most.",
     images: [
+      { src: "/images/materials/quartz/varieties/calacatta-arte.jpg", alt: "Calacatta Arte quartz slab" },
       { src: "/images/materials/quartz/quartz-01.jpg", alt: "Custom quartz-topped table, fabricated in-house" },
     ],
     varieties: [
