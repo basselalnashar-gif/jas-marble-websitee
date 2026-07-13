@@ -51,7 +51,7 @@ export const materials: Material[] = [
       { label: "Heat resistance", value: "Very good" },
       { label: "Best use cases", value: "Feature walls, flooring, bathrooms, low-acid kitchen counters" },
     ],
-    bestUseCases: ["Wall Cladding", "Flooring", "Luxury Interior Projects"],
+    bestUseCases: ["Wall Cladding", "Flooring"],
   },
   {
     slug: "granite",
@@ -141,7 +141,7 @@ export const materials: Material[] = [
       { label: "Heat resistance", value: "Very good" },
       { label: "Best use cases", value: "Bathrooms, wall cladding, feature flooring" },
     ],
-    bestUseCases: ["Wall Cladding", "Flooring", "Luxury Interior Projects"],
+    bestUseCases: ["Wall Cladding", "Flooring"],
   },
   {
     slug: "onyx",
@@ -156,22 +156,7 @@ export const materials: Material[] = [
       { label: "Heat resistance", value: "Moderate" },
       { label: "Best use cases", value: "Backlit feature walls, bar tops, reception desks" },
     ],
-    bestUseCases: ["Wall Cladding", "Luxury Interior Projects"],
-  },
-  {
-    slug: "limestone",
-    name: "Limestone",
-    tagline: "Soft, even tone with a natural matte finish",
-    description:
-      "Limestone offers a quieter, more uniform look than marble or granite, with a natural matte finish that suits understated, contemporary interiors and exteriors alike.",
-    images: [],
-    specs: [
-      { label: "Durability", value: "Good — softer stone, sealing recommended" },
-      { label: "Porosity", value: "Medium-high — sealing recommended" },
-      { label: "Heat resistance", value: "Good" },
-      { label: "Best use cases", value: "Flooring, wall cladding, exterior facades" },
-    ],
-    bestUseCases: ["Flooring", "Wall Cladding"],
+    bestUseCases: ["Wall Cladding"],
   },
 ];
 

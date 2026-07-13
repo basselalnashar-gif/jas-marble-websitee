@@ -12,7 +12,7 @@ export const projects: Project[] = [
     location: "Dubai, UAE",
     category: "Residential",
     materialSlugs: ["marble", "granite", "quartz"],
-    applicationSlugs: ["vanity-counters", "wall-cladding", "luxury-interior-projects"],
+    applicationSlugs: ["vanity-counters", "wall-cladding"],
     summary:
       "Natural stone supply for Pagani Tower, an ultra-luxury residential tower developed by DarGlobal in collaboration with Pagani Automobili.",
     scope: "Stone supply for interior surfaces across the tower.",
@@ -27,7 +27,7 @@ export const projects: Project[] = [
     title: "The American University of Sharjah",
     location: "Sharjah, UAE",
     category: "Institutional",
-    materialSlugs: ["marble", "limestone"],
+    materialSlugs: ["marble"],
     applicationSlugs: ["wall-cladding", "flooring"],
     summary:
       "Natural stone supply and installation across the AUS campus, home to one of the region's most recognizable pieces of Islamic-influenced architecture.",
@@ -43,7 +43,7 @@ export const projects: Project[] = [
     title: "Sharjah Education Council",
     location: "Sharjah, UAE",
     category: "Institutional",
-    materialSlugs: ["marble", "limestone"],
+    materialSlugs: ["marble"],
     applicationSlugs: ["wall-cladding"],
     summary:
       "Stone supply and facade work for the Sharjah Education Council building, delivered for the Government of Sharjah.",
@@ -59,7 +59,7 @@ export const projects: Project[] = [
     title: "Sharjah Suburbs and Villages Affairs Department",
     location: "Sharjah, UAE",
     category: "Institutional",
-    materialSlugs: ["marble", "limestone"],
+    materialSlugs: ["marble"],
     applicationSlugs: ["wall-cladding"],
     summary:
       "Natural stone facade for a Government of Sharjah civic building, part of our ongoing work with Sharjah government departments.",

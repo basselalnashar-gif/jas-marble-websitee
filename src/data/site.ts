@@ -56,7 +56,6 @@ export const materialsNav: NavLink[] = [
   { label: "Sintered Stone", href: "/materials/sintered-stone", description: "Ultra-compact, heat and scratch resistant" },
   { label: "Travertine", href: "/materials/travertine", description: "Warm, textured, quietly luxurious" },
   { label: "Onyx", href: "/materials/onyx", description: "Translucent, dramatic, one of a kind" },
-  { label: "Limestone", href: "/materials/limestone", description: "Soft, even tone, natural matte finish" },
 ];
 
 export const applicationsNav: NavLink[] = [
@@ -65,7 +64,6 @@ export const applicationsNav: NavLink[] = [
   { label: "Wall Cladding", href: "/applications/wall-cladding", description: "Statement surfaces, interior and exterior" },
   { label: "Staircase", href: "/applications/staircase", description: "A first impression, carved in stone" },
   { label: "Furniture", href: "/applications/furniture", description: "Sculptural pieces, built to be the centerpiece" },
-  { label: "Luxury Interior Projects", href: "/applications/luxury-interior-projects", description: "Full-scale bespoke transformations" },
 ];
 
 export const primaryNav: NavLink[] = [

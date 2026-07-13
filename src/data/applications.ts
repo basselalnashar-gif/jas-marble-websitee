@@ -92,30 +92,6 @@ export const applications: Application[] = [
     recommendedMaterialSlugs: ["marble", "sintered-stone"],
   },
   {
-    slug: "luxury-interior-projects",
-    name: "Luxury Interior Projects",
-    tagline: "Full-scale bespoke transformations",
-    description:
-      "For architects and designers managing a full interior — countertops, flooring, cladding, staircases, and custom furniture pieces in a single material story — we act as a single fabrication partner from concept through installation.",
-    images: [
-      { src: "/images/applications/luxury-interior-projects/li-01.jpg", alt: "Marble staircase with glass balustrade" },
-      { src: "/images/applications/luxury-interior-projects/li-02.jpg", alt: "Marble-clad bathroom with backlit mirror" },
-    ],
-    options: [
-      "Single-source material sourcing across an entire project",
-      "Custom furniture and fixture fabrication",
-      "Staircases, vanities, and architectural details",
-      "Dedicated project management from design through install",
-    ],
-    process: [
-      { title: "Consultation", description: "We meet with your design team to understand the full scope." },
-      { title: "Template & measure", description: "Coordinated site surveys across all affected areas." },
-      { title: "Fabrication", description: "All elements fabricated to a consistent material and finish story." },
-      { title: "Install", description: "Phased installation coordinated with your project timeline." },
-    ],
-    recommendedMaterialSlugs: ["marble", "granite", "quartz", "sintered-stone"],
-  },
-  {
     slug: "staircase",
     name: "Staircase",
     tagline: "A first impression, carved in stone",
