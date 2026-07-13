@@ -35,9 +35,9 @@ const config: Config = {
         },
       },
       fontFamily: {
-        display: ["var(--font-display)"],
-        sans: ["var(--font-sans)"],
-        brand: ["var(--font-brand)"],
+        display: ["Calibri", "Carlito", "Candara", "Segoe UI", "Optima", "Arial", "sans-serif"],
+        sans: ["Calibri", "Carlito", "Candara", "Segoe UI", "Optima", "Arial", "sans-serif"],
+        brand: ["Calibri", "Carlito", "Candara", "Segoe UI", "Optima", "Arial", "sans-serif"],
       },
       letterSpacing: {
         tightest: "-0.04em",
