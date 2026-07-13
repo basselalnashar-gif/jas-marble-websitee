@@ -57,6 +57,9 @@ export default function AboutPage() {
             <p className="font-display text-3xl text-fg" dir="rtl" lang="ar">
               {site.nameArabic}
             </p>
+            <p className="font-brand text-lg font-bold tracking-tight text-fg">
+              {site.name}
+            </p>
             <p className="max-w-md text-sm text-fg-muted">
               Headquartered in Ajman, UAE, {site.name} has grown since{" "}
               {site.founded} into two divisions working under one roof —
