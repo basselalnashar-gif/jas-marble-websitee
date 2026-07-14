@@ -66,13 +66,9 @@ export const applications: Application[] = [
       "A stone-clad wall turns a lobby, feature wall, or facade into a signature moment. We fabricate cladding in large-format slabs or panels, book-matched where the material allows, for a continuous and dramatic effect.",
     images: [
       { src: "/images/applications/wall-cladding/wc-04.jpg", alt: "Volakas marble bookmatched wall cladding with dramatic veining" },
-      { src: "/images/applications/wall-cladding/wc-03.jpg", alt: "Bookmatched marble slab, floor to ceiling" },
       { src: "/images/applications/wall-cladding/wc-02.jpg", alt: "Marble wall cladding in a bathroom" },
       { src: "/images/applications/wall-cladding/wc-05.jpg", alt: "Grigio Orobico bookmatched marble feature wall beside timber battens" },
-      { src: "/images/applications/wall-cladding/wc-06.jpg", alt: "Fluted travertine wall cladding beside a matching stone staircase" },
-      { src: "/images/applications/wall-cladding/wc-07.jpg", alt: "Bookmatched marble cladding rising two storeys beside glazing and a chandelier" },
       { src: "/images/applications/wall-cladding/wc-08.jpg", alt: "Backlit agate stone wall cladding beside a copper-framed elevator" },
-      { src: "/images/applications/wall-cladding/wc-09.jpg", alt: "Bookmatched marble cladding surrounding an elevator and staircase" },
       { src: "/images/applications/wall-cladding/wc-10.jpg", alt: "Fluted travertine cladding on an exterior facade and columns" },
       { src: "/images/applications/wall-cladding/wc-11.jpg", alt: "Beige bookmatched marble elevator surround with crown molding" },
       { src: "/images/applications/wall-cladding/wc-12.jpg", alt: "Black bookmatched marble elevator surround with glass elevator doors" },
