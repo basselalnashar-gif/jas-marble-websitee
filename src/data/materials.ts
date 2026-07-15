@@ -160,8 +160,8 @@ export const materials: Material[] = [
       { src: "/images/materials/sintered-stone/sintered-stone-28.jpg", alt: "Sintered stone slab, pink-grey stone-look finish" },
     ],
     varieties: [
-      { name: "Calacatta Viola", image: { src: "/images/materials/sintered-stone/varieties/calacatta-viola.jpg", alt: "Calacatta Viola sintered stone slab" } },
-      { name: "Blue Mystery", image: { src: "/images/materials/sintered-stone/varieties/blue-mystery.jpg", alt: "Blue Mystery sintered stone slab" } },
+      { name: "Calacatta Viola", image: { src: "/images/materials/sintered-stone/varieties/calacatta-viola-v2.jpg", alt: "Calacatta Viola sintered stone slab" } },
+      { name: "Blue Mystery", image: { src: "/images/materials/sintered-stone/varieties/blue-mystery-v2.jpg", alt: "Blue Mystery sintered stone slab" } },
       { name: "Rose Onyx", image: { src: "/images/materials/sintered-stone/varieties/rose-onyx.jpg", alt: "Rose Onyx sintered stone slab" } },
       { name: "Capraia Brown", image: { src: "/images/materials/sintered-stone/varieties/capraia-brown.jpg", alt: "Capraia Brown sintered stone slab" } },
       { name: "Bordeaux", image: { src: "/images/materials/sintered-stone/varieties/bordeaux.jpg", alt: "Bordeaux sintered stone slab" } },
