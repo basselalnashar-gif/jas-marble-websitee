@@ -120,7 +120,7 @@ export default function MaterialPage({
               images={material.varieties.map((variety) => ({
                 src: variety.image.src,
                 alt: variety.image.alt,
-                caption: variety.name,
+                caption: material.slug === "sintered-stone" ? undefined : variety.name,
               }))}
               tileClassName="aspect-square"
             />
