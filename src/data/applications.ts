@@ -11,15 +11,7 @@ export const applications: Application[] = [
     tagline: "The centerpiece of the bathroom",
     description:
       "The vanity counter is where fine finishes matter most — a surface seen up close, every day, that needs to resist water, cosmetics, and daily wear while still looking flawless. We template, fabricate, and install vanity counters in marble, granite, quartz, and sintered stone, with integrated sinks and edge profiles to match your bathroom's style.",
-    images: [
-      { src: "/images/applications/vanity-counters/vc-01.jpg", alt: "Greywood double vanity with backlit mirrors and floating stone counter" },
-      { src: "/images/applications/vanity-counters/vc-02.jpg", alt: "Double vanity with gold-framed mirrors, gold fixtures, and dark wood cabinetry" },
-      { src: "/images/applications/vanity-counters/vc-03.jpg", alt: "Tundra Grey marble vanity with carved sink and glass shower behind" },
-      { src: "/images/applications/vanity-counters/vc-04.jpg", alt: "Light beige travertine and sintered stone vanity with undermount sink" },
-      { src: "/images/applications/vanity-counters/vc-05.jpg", alt: "Travertine double vanity with angled trough sinks and mixed black and copper faucets" },
-      { src: "/images/applications/vanity-counters/vc-06.jpg", alt: "Dramatic beige and grey marble powder room with cylindrical pedestal sink" },
-      { src: "/images/applications/vanity-counters/vc-07.jpg", alt: "Vanity counter stand cut from dramatic Calacatta Viola marble" },
-    ],
+    images: [],
     options: [
       "Eased, bullnose, waterfall, and mitered edge profiles",
       "Honed, polished, or leathered finishes",
@@ -70,8 +62,6 @@ export const applications: Application[] = [
       { src: "/images/applications/wall-cladding/wc-05.jpg", alt: "Grigio Orobico bookmatched marble feature wall beside timber battens" },
       { src: "/images/applications/wall-cladding/wc-08.jpg", alt: "Backlit agate stone wall cladding beside a copper-framed elevator" },
       { src: "/images/applications/wall-cladding/wc-10.jpg", alt: "Fluted travertine cladding on an exterior facade and columns" },
-      { src: "/images/applications/wall-cladding/wc-11.jpg", alt: "Beige bookmatched marble elevator surround with crown molding" },
-      { src: "/images/applications/wall-cladding/wc-12.jpg", alt: "Black bookmatched marble elevator surround with glass elevator doors" },
       { src: "/images/applications/wall-cladding/wc-13.jpg", alt: "Bookmatched marble feature wall with diamond veining in a reception lobby" },
       { src: "/images/applications/wall-cladding/wc-14.jpg", alt: "Fluted travertine cladding on a modern villa exterior facade" },
       { src: "/images/applications/wall-cladding/wc-15.jpg", alt: "Travertine wall cladding beside a stone staircase, lit by daylight" },
