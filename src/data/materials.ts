@@ -201,7 +201,6 @@ export const materials: Material[] = [
       { name: "Sintered Stone", image: { src: "/images/materials/sintered-stone/sintered-stone-25.jpg", alt: "Sintered stone slab, grey mottled finish" } },
       { name: "Sintered Stone", image: { src: "/images/materials/sintered-stone/sintered-stone-26.jpg", alt: "Sintered stone slab, cream linear finish, studio shot" } },
       { name: "Sintered Stone", image: { src: "/images/materials/sintered-stone/sintered-stone-27.jpg", alt: "Sintered stone slab, cream linear finish, studio shot" } },
-      { name: "Sintered Stone", image: { src: "/images/materials/sintered-stone/sintered-stone-28.jpg", alt: "Sintered stone slab, pink-grey stone-look finish" } },
     ],
     specs: [
       { label: "Durability", value: "Outstanding — highly scratch and impact resistant" },
