@@ -241,7 +241,17 @@ export const materials: Material[] = [
     tagline: "Translucent, dramatic, one of a kind",
     description:
       "Onyx is prized above all for its translucency — backlit, its veining glows in a way no other stone can match. We reserve onyx for signature features: feature walls, bar tops, and backlit reception surfaces.",
-    images: [],
+    images: [
+      { src: "/images/materials/onyx/varieties/onyx-verde.jpg", alt: "Onyx Verde slab" },
+    ],
+    varieties: [
+      { name: "Onyx Verde", image: { src: "/images/materials/onyx/varieties/onyx-verde.jpg", alt: "Onyx Verde slab" } },
+      { name: "Onyx Arancio", image: { src: "/images/materials/onyx/varieties/onyx-arancio.jpg", alt: "Onyx Arancio slab" } },
+      { name: "Onyx Miele", image: { src: "/images/materials/onyx/varieties/onyx-miele.jpg", alt: "Onyx Miele slab" } },
+      { name: "Onyx Velutto", image: { src: "/images/materials/onyx/varieties/onyx-velutto.jpg", alt: "Onyx Velutto slab" } },
+      { name: "Onyx Red", image: { src: "/images/materials/onyx/varieties/onyx-red.jpg", alt: "Onyx Red slab" } },
+      { name: "Onyx Pink", image: { src: "/images/materials/onyx/varieties/onyx-pink.jpg", alt: "Onyx Pink slab" } },
+    ],
     specs: [
       { label: "Durability", value: "Delicate — best for feature, low-traffic surfaces" },
       { label: "Porosity", value: "High — sealing required" },
