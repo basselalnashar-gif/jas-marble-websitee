@@ -220,6 +220,12 @@ export const materials: Material[] = [
       { src: "/images/materials/travertine/travertine-01.jpg", alt: "Travertine vanity with backlit mirror" },
       { src: "/images/materials/travertine/travertine-02.jpg", alt: "Travertine bathroom with marble accent wall" },
     ],
+    varieties: [
+      { name: "Travertino Rosso", image: { src: "/images/materials/travertine/varieties/travertino-rosso.jpg", alt: "Travertino Rosso travertine slab" } },
+      { name: "Travertino Striato", image: { src: "/images/materials/travertine/varieties/travertino-striato.jpg", alt: "Travertino Striato travertine slab" } },
+      { name: "Travertino Navona", image: { src: "/images/materials/travertine/varieties/travertino-navona.jpg", alt: "Travertino Navona travertine slab" } },
+      { name: "Travertino Silver", image: { src: "/images/materials/travertine/varieties/travertino-silver.jpg", alt: "Travertino Silver travertine slab" } },
+    ],
     specs: [
       { label: "Durability", value: "Good — softer stone, best in low-impact areas" },
       { label: "Porosity", value: "High — filling and sealing recommended" },
