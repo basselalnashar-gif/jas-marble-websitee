@@ -217,6 +217,7 @@ export const materials: Material[] = [
     description:
       "Travertine's soft, linear texture and warm tonal range make it a favorite for spa-like bathrooms and sun-washed interiors. We fabricate it for vanities, wall cladding, and flooring across both honed and filled finishes.",
     images: [
+      { src: "/images/materials/travertine/varieties/travertino-striato.jpg", alt: "Travertino Striato travertine slab" },
       { src: "/images/materials/travertine/travertine-01.jpg", alt: "Travertine vanity with backlit mirror" },
       { src: "/images/materials/travertine/travertine-02.jpg", alt: "Travertine bathroom with marble accent wall" },
     ],
